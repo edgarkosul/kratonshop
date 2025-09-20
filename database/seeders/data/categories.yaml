@@ -1,0 +1,948 @@
+# categories.yaml
+- name: Компрессорное оборудование
+  slug: kompressornoe-oborudovanie
+  children:
+    - name: Компрессоры с ременной передачей
+      slug: kompressory-s-remennoy-peredachey
+    - name: Компрессоры с вертикальным ресивером
+      slug: kompressory-s-vertikalnym-resiverom
+    - name: Компрессоры поршневые безмасляные
+      slug: kompressory-porshnevye-bezmaslyanye
+      children:
+        - name: Компрессоры поршневые безмасляные бытовые
+          slug: kompressory-porshnevye-bezmaslyanye-bytovye
+        - name: Компрессоры поршневые безмасляные общего назначения
+          slug: kompressory-porshnevye-bezmaslyanye-obschego-naznacheniya
+        - name: Компрессоры поршневые безмасляные медицинские
+          slug: kompressory-porshnevye-bezmaslyanye-meditsinskie
+    - name: Компрессоры винтовые
+      slug: kompressory-vintovye
+      children:
+        - name: Компрессоры
+          slug: kompressory
+        - name: Компрессоры с ресивером
+          slug: kompressory-s-resiverom
+        - name: Компрессоры с ресивером и осушителем
+          slug: kompressory-s-resiverom-i-osushitelem
+        - name: Компрессоры безмасляные
+          slug: kompressory-bezmaslyanye
+        - name: Компрессоры автономные
+          slug: kompressory-avtonomnye
+        - name: Магистральные фильтры
+          slug: magistralnye-filtry
+        - name: Одноступенчатые винтовые блоки
+          slug: odnostupenchatie-vintovye-bloki
+    - name: Осушители рефрижераторного типа
+      slug: osushiteli-refrizheratornogo-tipa
+    - name: Осушители адсорбционные
+      slug: osushiteli-adsorbtsionnye
+    - name: Циклонные сепараторы
+      slug: tsiklonnie-separatory
+    - name: Компрессоры повышенного давления
+      slug: kompressory-povyshennogo-davleniya
+    - name: Ресиверы
+      slug: resivery
+    - name: Частотные преобразователи
+      slug: chastotnye-preobrazovateli
+    - name: Компрессоры с прямой передачей
+      slug: kompressory-s-pryamoy-peredachey
+    - name: Комплект для мобильного шиномонтажа
+      slug: komplekt-dlya-mobilnogo-shinomontazha
+    - name: Компрессоры строительные передвижные
+      slug: kompressory-stroitelnye-peredvizhnye
+    - name: Компрессоры с осушителем холодильного типа
+      slug: kompressory-s-osushitelem-holodilnogo-tipa
+    - name: Компрессоры спиральные безмасляные
+      slug: kompressory-spiralnye-bezmaslyanye
+    - name: Пневмо арматура
+      slug: pnevmo-armatura
+    - name: Пневмоинструмент
+      slug: pnevmoinstrument
+    - name: Запчасти для компрессоров
+      slug: zapchasti-dlya-kompressorov
+    - name: Пескоструйные аппараты
+      slug: peskostruynye-apparaty
+
+- name: Гидравлический инструмент
+  slug: gidravlicheskiy-instrument
+  children:
+    - name: Гидравлические станции (маслостанции)
+      slug: gidravlicheskie-stantsii
+    - name: Домкраты
+      slug: domkraty
+      children:
+        - name: Грузовые домкраты с пружинным возвратом штока
+          slug: gruzovye-domkraty-s-pruzhinnym-vozvratom-shtoka
+        - name: Грузовые домкраты с гравитационным возвратом штока
+          slug: gruzovye-domkraty-s-gravitatsionnym-vozvratom-shtoka
+        - name: Грузовые домкраты с гидравлическим возвратом штока
+          slug: gruzovye-domkraty-s-gidravlicheskim-vozvratom-shtoka
+        - name: Домкраты алюминиевые грузовые ДГА с пружинным возвратом
+          slug: domkraty-alyuminievye-dga-pruzhinnyy-vozvrat
+        - name: Домкраты алюминиевые грузовые ДГА с гидравлическим возвратом
+          slug: domkraty-alyuminievye-dga-gidravlicheskiy-vozvrat
+        - name: Домкраты алюминиевые грузовые гидравлические с фиксирующей гайкой и пружинным возвратом
+          slug: domkraty-alyuminievye-fiks-gayka-pruzhinnyy
+        - name: Домкраты с полым штоком
+          slug: domkraty-s-polym-shtokom
+        - name: Грузовые домкраты с гидравлическим возвратом и резьбой на гильзе
+          slug: gruzovye-domkraty-s-rezboy-na-gilze
+        - name: Домкраты грузовые гидравлические ДГ с фиксирующей гайкой
+          slug: domkraty-dg-s-fiksiruyuschey-gaykoy
+        - name: Домкраты телескопические грузовые
+          slug: domkraty-teleskopicheskie
+        - name: Домкраты с низким профилем
+          slug: domkraty-nizkie
+        - name: Домкраты низкие гидравлические
+          slug: domkraty-nizkie-gidravlicheskie
+        - name: Домкраты гидравлические путевые
+          slug: domkraty-putevye
+        - name: Домкраты гидравлические автономные
+          slug: domkraty-avtonomnye
+        - name: Домкраты пневмогидравлические
+          slug: domkraty-pnevmogidravlicheskie
+        - name: Плавающие опоры для домкратов
+          slug: plavayuschie-opory-dlya-domkratov
+    - name: Гидроцилиндры для пресса и трубогибов
+      slug: gidrotsilindry-dlya-pressa-i-trubogibov
+    - name: Гидроцилиндры для кузовных и арматурных работ
+      slug: gidrotsilindry-dlya-kuzovnyh-rabot
+    - name: Станки шиносборочные
+      slug: stanki-shinosborochnye
+    - name: Арматурогибы гидравлические
+      slug: armaturogiby-gidravlicheskie
+    - name: Арматурорезы гидравлические
+      slug: armaturorezy-gidravlicheskie
+    - name: Универсальный гидравлический инструмент
+      slug: universalnyj-gidravlicheskiy-instrument
+    - name: Гайковёрты гидравлические
+      slug: gaykoverty-gidravlicheskie
+      children:
+        - name: Гайковёрты гидравлические торцевые
+          slug: gaykoverty-gidravlicheskie-tortsevye
+        - name: Гайковёрты гидравлические кассетные
+          slug: gaykoverty-gidravlicheskie-kassetnye
+        - name: Кассеты для гидравлического гайковёрта ГГМК-2400
+          slug: kasseti-ggmk-2400
+        - name: Кассеты для гидравлического гайковёрта ГГМК-6500
+          slug: kasseti-ggmk-6500
+        - name: Кассеты для гидравлического гайковёрта ГГМК-11800
+          slug: kasseti-ggmk-11800
+        - name: Кассеты для гидравлического гайковёрта ГГМК-18500
+          slug: kasseti-ggmk-18500
+        - name: Кассеты для гидравлического гайковёрта серии ТХ
+          slug: kasseti-serii-tx
+        - name: Вставка для кассеты гайковёрта серии ТХ
+          slug: vstavka-kassety-tx
+        - name: Вставка для кассеты гайковёрта серии ГГМК
+          slug: vstavka-kassety-ggmk
+        - name: Переходник с кассеты на квадрат
+          slug: perehodnik-s-kassety-na-kvadrat
+        - name: Головки торцевые ударные для гидравлических гайковёртов
+          slug: golovki-udarnye-dlya-gaykovertov
+    - name: Кабелерезы и тросорезы
+      slug: kabelerezy-i-trosorezy
+    - name: Кардаторезы гидравлические
+      slug: kardatorezy-gidravlicheskie
+    - name: Прессы для опрессовки
+      slug: pressy-dlya-opressovki
+    - name: Оборудование для производства РВД
+      slug: oborudovanie-dlya-proizvodstva-rvd
+    - name: Инструмент для пресс-фитинга
+      slug: instrument-dlya-press-fitinga
+    - name: Разъёмщики фланцев
+      slug: razemschiki-flantsev
+    - name: Разжим-кусалки гидравлические
+      slug: razhim-kusalki-gidravlicheskie
+    - name: Съёмники гидравлические
+      slug: syomniki-gidravlicheskie
+    - name: Тензорные домкраты
+      slug: tenzornye-domkraty
+    - name: Углопресс гидравлический
+      slug: uglopress-gidravlicheskiy
+    - name: Шинорезы гидравлические
+      slug: shinorezy-gidravlicheskie
+    - name: Шлифовщики гидравлические
+      slug: shlifovschiki-gidravlicheskie
+    - name: Шплёпорезы гидравлические
+      slug: shpleporezy-gidravlicheskie
+    - name: Пресса гидравлические
+      slug: pressa-gidravlicheskie
+    - name: Оснастка и приспособления
+      slug: osnastka-i-prisposobleniya
+    - name: Опрессовщики гидравлические
+      slug: opressovschiki-gidravlicheskie
+    - name: Трубогибы гидравлические
+      slug: trubogiby-gidravlicheskie
+    - name: Шланги и комплектующие
+      slug: shlangi-i-komplektuyuschie
+    - name: Матрицы и пуансоны для шинонодиров и опрессовки
+      slug: matritsy-i-puansony
+    - name: Ножи для гидравлического оборудования
+      slug: nozhi-dlya-gidravlicheskogo-oborudovaniya
+
+- name: Сварочное оборудование
+  slug: svarochnoe-oborudovanie
+  children:
+    - name: Сварочные аппараты MMA
+      slug: mma
+    - name: Сварочные полуавтоматы
+      slug: poluavtomaty
+    - name: Аппараты аргонодуговой сварки
+      slug: tig
+    - name: Аппараты плазменной резки
+      slug: plazmennaya-rezka
+    - name: Машины для термической резки металла
+      slug: termicheskaya-rezka-metalla
+    - name: Аппарат для приварки шпилек
+      slug: privarka-shpilek
+    - name: Машины контактной сварки
+      slug: kontaktnaya-svarka
+    - name: Аппараты шовной сварки
+      slug: shovnaya-svarka
+    - name: Споттеры
+      slug: spottery
+    - name: Сварочные тракторы, сварка под флюсом
+      slug: svatochnye-traktory
+    - name: Лазерное оборудование
+      slug: lazer
+    - name: Портальные установки плазменной резки
+      slug: portalnye-plazmennye
+    - name: Вращатели сварочные
+      slug: vrashchateli
+    - name: Столы сварочно-монтажные
+      slug: stoly-svarochnye
+    - name: Выносные подающие механизмы
+      slug: podayuschie-mehanizmy
+    - name: Оборудование для газосварочных работ
+      slug: gazosvarochnye-raboty
+    - name: Станции охлаждения
+      slug: stantsii-ohlazhdeniya
+    - name: Палатки сварщика
+      slug: palatki-svarschika
+    - name: Тележки для сварочных аппаратов
+      slug: telezhki-dlya-apparatov
+    - name: Сварочные горелки MIG
+      slug: gorelki-mig
+    - name: Сварочные горелки TIG
+      slug: gorelki-tig
+    - name: Плазмотроны CUT
+      slug: plazmotrony
+    - name: Оснастка к машинам газовой резки
+      slug: osnastka-gazorezka
+    - name: Оснастка к столам сварочно-монтажным
+      slug: osnastka-k-stolam
+    - name: Сварочные аксессуары
+      slug: sv_accessories
+    - name: Электропечи и термопеналы
+      slug: elektropeci-i-termopenaly
+    - name: Редукторы и регуляторы
+      slug: reduktory-i-regulyatory
+    - name: Охладители для сварки
+      slug: ohladiteli
+    - name: Маски сварщика
+      slug: maski-svarschika
+    - name: Средства защиты
+      slug: sizo-svarka
+
+- name: Станки и оборудование
+  slug: stanki-i-oborudovanie
+  children:
+    - name: Станки для деревообработки
+      slug: stanki-dlya-derevoobrabotki
+      children:
+        - name: Пилы торцовочно-усовочные
+          slug: pily-tortsevochno-usovochnye
+        - name: Станки многооперационные деревообрабатывающие
+          slug: stanki-mnogooperatsionnye-derevo
+        - name: Станки ленточнопильные и лобзиковые по дереву
+          slug: stanki-lentochnopilnye-derevo
+        - name: Станки крупнопильные
+          slug: stanki-krupnopilnye
+        - name: Форматно-раскроечные станки
+          slug: formatno-raskroyechnye
+        - name: Станки фуговально-рейсмусовые
+          slug: fugovalno-reysmuso
+        - name: Станки рейсмусовые
+          slug: reysmusovye
+        - name: Станки фуговальные
+          slug: fugovalnye
+        - name: Станки фрезерные по дереву
+          slug: frezernye-po-derevu
+        - name: Столы фрезерные и комплектующие
+          slug: stoly-frezernye-i-komplektuyuschie
+        - name: Станки токарные по дереву
+          slug: tokarnye-po-derevu
+        - name: Станки сверлильно-присадочные
+          slug: sverlilno-prisadochnye
+        - name: Станки для обработки кромки
+          slug: dlya-obrabotki-kromki
+        - name: Автоподатчики заготовок
+          slug: avtopodatchiki
+    - name: Станки для металлообработки
+      slug: stanki-dlya-metalloobrabotki
+      children:
+        - name: Станки сверлильные на магнитном основании
+          slug: sverlilnye-na-magnitnom
+        - name: Станки ленточнопильные по металлу
+          slug: lentochnopilnye-metall
+        - name: Станки кромкорезные
+          slug: kromkoreznye
+        - name: Труборезы ручные и электрические
+          slug: truborezy-ruchnye-i-elektricheskie
+        - name: Станки токарные по металлу
+          slug: tokarnye-po-metallu
+        - name: Станки фрезерные по металлу
+          slug: frezernye-po-metallu
+        - name: Станки электроэрозионные
+          slug: elektroerozionnye
+        - name: Станки вырубные, раскрой металла
+          slug: vyrybnye-raskroy
+        - name: Станки листогибочные
+          slug: listogibochnye
+        - name: Листогибочные прессы
+          slug: listogibochnye-pressy
+        - name: Желобонакатные станки
+          slug: zhelobonakatnye
+        - name: Станки вальцовочные
+          slug: valtsovochnye
+        - name: Резьбонарезное оборудование
+          slug: rezbonareznoye
+        - name: Резьбонарезные манипуляторы
+          slug: rezbonareznye-manipulyatory
+        - name: Станки зиговочные
+          slug: zigovochnye
+        - name: Станки фальцепрокатные
+          slug: faltsprokatnye
+        - name: Станки трубогибочные
+          slug: trubogibochnye
+        - name: Разматыватели металла
+          slug: razmatyvateli
+        - name: Машины отрезные
+          slug: mashiny-otreznye
+        - name: Прессы
+          slug: pressy
+        - name: Станки для вырезания отверстий в трубах
+          slug: dlya-vyrezaniya-v-trubah
+        - name: Станки прецизионные по металлу
+          slug: stanki-pretsizionnye
+        - name: Станки шинообрабатывающие
+          slug: stanki-shinoobrabatyvayuschie
+        - name: Шринкеры
+          slug: shrinkery
+        - name: Английское колесо
+          slug: angliyskoe-koleso
+        - name: Молотки падлинные
+          slug: molotki-padlinnye
+        - name: Кузнечное оборудование
+          slug: kuznechnoe-oborudovanie
+    - name: Оборудование для работы с пластиком
+      slug: oborudovanie-dlya-plastika
+      children:
+        - name: Стыковая сварка пластиковых труб
+          slug: stykovaya-svarka-trub
+        - name: Электромуфтовая сварка
+          slug: elektromuftovaya-svarka
+        - name: Ленточные пилы для ПНД труб
+          slug: lentochnye-pily-pnd
+        - name: Ремонт пластика
+          slug: remont-plastika
+        - name: Раструбная сварка
+          slug: rastrubnaya-svarka
+        - name: Электрофены
+          slug: elektrofeny
+        - name: Ручные аксильные прессы
+          slug: aksilnye-pressy
+        - name: Ручная резка и снятие фаски
+          slug: snyatie-faski
+    - name: Оборудование для сварки полимерных материалов
+      slug: svarka-polimerov
+      children:
+        - name: Сварочные автоматы горячего воздуха
+          slug: sv-automaty-goryachego-vozduha
+        - name: Сварочные экструдеры
+          slug: sv-ekstrudery
+        - name: Фены технические
+          slug: feny-tehnicheskie
+    - name: Станки сверлильные
+      slug: stanki-sverlilnye
+    - name: Станки заточные для инструмента
+      slug: stanki-zatochnye
+    - name: Станки шлифовальные
+      slug: stanki-shlifovalnye
+    - name: Машины плоскошлифовальные и строгальные
+      slug: ploskostrogalnye
+    - name: Железнодорожный инструмент
+      slug: zheleznodorozhnyj-instrument
+    - name: Пескоструйное оборудование
+      slug: peskostruynoe-oborudovanie
+    - name: Обслуживание холодильной техники
+      slug: holodilnaya-tehnika-servis
+    - name: Тиски
+      slug: tiski
+    - name: Столы
+      slug: stoly
+    - name: Делительные головки
+      slug: delitelnye-golovki
+    - name: Столы магнитные
+      slug: stoly-magnitnye
+    - name: Столы опорные, роликовые опоры
+      slug: stoly-opornye-rolikovye
+    - name: Станки для разделки кабеля
+      slug: stanki-dlya-razdelki-kabelya
+    - name: Сборщики стружки
+      slug: sborshchiki-struzhki
+    - name: Окрасочные аппараты
+      slug: okrasochnye-apparaty
+    - name: Ручной электроинструмент
+      slug: ruchnoy-elektroinstrument
+      children:
+        - name: Пилы циркулярные
+          slug: pily-tsirkulyarnye
+        - name: Угловые шлифовальные машины
+          slug: bolgarki
+        - name: Гайковёрты сетевые
+          slug: gaykoverty-setevye
+        - name: Аккумуляторный инструмент
+          slug: akkumulyatornyy-instrument
+        - name: Шуруповёрты сетевые
+          slug: shurupoverti-setevye
+        - name: Дрели ударные
+          slug: dreli-udarnye
+        - name: Электролобзики
+          slug: elektrolobziki
+        - name: Электрорубанки
+          slug: elektrorubanki
+        - name: Шлифовальные машины
+          slug: shlifmashiny
+        - name: Фрезеры
+          slug: frezery
+        - name: Перфораторы
+          slug: perforatory
+        - name: Миксеры строительные
+          slug: miksery-stroitelnye
+        - name: Пилы алмазные
+          slug: pily-almaznye
+        - name: Ножницы по металлу
+          slug: nozhnitsy-po-metallu
+        - name: Прочий электро инструмент
+          slug: prochiy-elektroinstrument
+    - name: Система охлаждения для станков
+      slug: sistema-ohlazhdeniya-stankov
+    - name: Принадлежности к станкам и оборудованию
+      slug: prinalezhnosti-k-stankam
+      children:
+        - name: Кольцевые фрезы по металлу
+          slug: koltsevye-frezy
+        - name: Спиральные сверла с соединением Weldon
+          slug: sverla-weldon
+        - name: Центровочные штифты
+          slug: tsentrovochnye-shtifty
+        - name: Комплектующие к магнитным станкам
+          slug: komplektuyuschie-k-magnitnym
+        - name: Доп. оборудование к распиловочным станкам
+          slug: dop-oborudovanie-k-raspilovochnym
+        - name: Комплектующие к токарным по дереву
+          slug: komplektuyuschie-k-tokarnym-derevo
+        - name: Комплектующие к ленточнопильным по дереву
+          slug: komplektuyuschie-k-lentochnopilnym-derevo
+        - name: Комплектующие к заточным спец. инструмента
+          slug: komplektuyuschie-k-zatochnym-spets
+        - name: Комплектующие к листогибочным
+          slug: komplektuyuschie-k-listogibochnym
+        - name: Комплектующие к токарным по металлу
+          slug: komplektuyuschie-k-tokarnym-metall
+        - name: Цанговые патроны с набором цанг
+          slug: tsangovye-patrony
+        - name: Комплектующие к фрезерным по металлу
+          slug: komplektuyuschie-k-frezernym-metall
+        - name: Комплектующие к кромкорезным
+          slug: komplektuyuschie-k-kromkoreznym
+        - name: Комплектующие к фуговальным и рейсмусовым
+          slug: komplektuyuschie-k-fugovalnym-i-reysmusovym
+        - name: Ножи к деревообрабатывающим станкам
+          slug: nozhi-k-derevostankam
+        - name: Головки расточные
+          slug: golovki-rastochnye
+        - name: Борфрезы
+          slug: borfrezy
+        - name: Звездочки для зубодрагирования
+          slug: zvezdochki
+        - name: Диски для труборезов
+          slug: diski-dlya-truborezov
+        - name: Ролики для трубогибов
+          slug: roliki-dlya-trubogibov
+        - name: Круги лепестковые
+          slug: krugi-lepestkovye
+        - name: Фрезы по дереву
+          slug: frezy-po-derevu
+        - name: Профильные фрезы по камню
+          slug: profile-frezy-po-kamnyu
+        - name: Токарные резцы
+          slug: tokarnye-reztsy
+        - name: Комплектующие к станкам сверлильным
+          slug: komplektuyuschie-k-sverlilnym
+        - name: Пилы ленточные
+          slug: lenty-pilnye
+        - name: Диски пильные
+          slug: diski-pilnye
+        - name: Линейки для инструмента
+          slug: lineyki
+        - name: Смазочно-охлаждающая жидкость
+          slug: sozh
+
+- name: Строительное оборудование
+  slug: stroitelnoye-oborudovanie
+  children:
+    - name: Станки для резки камня и плитки
+      slug: stanki-dlya-rezki-kamnya-i-plitki
+      children:
+        - name: Ручные станки для резки плитки
+          slug: ruchnye-stanki-dlya-plitki
+        - name: Плиткорезы электрические
+          slug: plitkorezy-elektricheskie
+        - name: Камнерезные станки
+          slug: kamnereznye-stanki
+    - name: Сверлильные машины для бетона
+      slug: sverlilnye-mashiny-beton
+      children:
+        - name: Установки алмазного бурения
+          slug: ustanovki-almaznogo-bureniya
+        - name: Моторы алмазного бурения
+          slug: motory-almaznogo-bureniya
+        - name: Стойки (штатив) для алмазного бурения
+          slug: stoyki-dlya-almaznogo-bureniya
+        - name: Дополнительное оборудование
+          slug: dop-oborudovanie
+        - name: Коронки для бурения
+          slug: koronki
+        - name: Удлинители для коронок
+          slug: udliniteli-dlya-koronok
+    - name: Швонарезчики
+      slug: shvonarezchiki
+    - name: Ручной электроинструмент для камнеобработки
+      slug: elektroinstrument-kamneobrabotka
+    - name: Бензорезы
+      slug: benzoresy
+    - name: Виброплиты
+      slug: vibroplity
+    - name: Вибротрамбовки
+      slug: vibrotrambovki
+    - name: Катки вибрационные
+      slug: katki-vibratsionnye
+    - name: Машины шлифовальные
+      slug: mashiny-shlifovalnye-stroy
+    - name: Затирочные машины
+      slug: zatirochnye-mashiny
+    - name: Виброрейки
+      slug: vibroreyki
+    - name: Разделители трещин
+      slug: razdeliteli-treshchin
+    - name: Резчики кровли
+      slug: rezchiki-krovi
+    - name: Станки для гибки и резки арматуры
+      slug: dlya-armatury
+    - name: Фрезеровальные машины
+      slug: frezerovalnye-mashiny
+    - name: Коперы
+      slug: kopery
+    - name: Вальцы для прикатки
+      slug: valtsy-dlya-prikatki
+    - name: Молотки отбойные
+      slug: molotki-otboynye
+    - name: Тачки строительные
+      slug: tachki-stroitelnye
+    - name: Стено резные машины
+      slug: stenoreznye-mashiny
+    - name: Аппараты окрасочные
+      slug: apparaty-okrasochnye
+    - name: Растворосмесители
+      slug: rastvorosmesiteli
+    - name: Растворонасосы, машины штукатурные
+      slug: rastvoronasosy
+    - name: Глубинные вибраторы
+      slug: glubinnye-vibratory
+    - name: Штроборезы
+      slug: shtroborezy
+    - name: Блокорезы
+      slug: blokorezy
+    - name: Пистолеты для вязки арматуры
+      slug: pistolety-dlya-vyazki-armatury
+    - name: Мини экскаваторы
+      slug: mini-ekskavatory
+    - name: Комплектующие к строительному оборудованию
+      slug: komplektuyuschie-k-stroitelnomu
+      children:
+        - name: Комплектующие к виброплитам
+          slug: komplektuyuschie-k-vibroplitam
+        - name: Комплектующие к глубинным вибраторам
+          slug: komplektuyuschie-k-glubinnym-vibratoram
+        - name: Комплектующие к виброрейкам
+          slug: komplektuyuschie-k-vibroreykam
+        - name: Комплектующие к пистолетом для вязки арматуры
+          slug: komplektuyuschie-k-pistoletam-vyazki
+        - name: Комплектующие к затирочным машинам
+          slug: komplektuyuschie-k-zatirochnym
+        - name: Комплектующие к фрезеровальным машинам
+          slug: komplektuyuschie-k-frezerovalnym
+        - name: Комплектующие к станкам для работы с арматурой
+          slug: komplektuyuschie-k-armature
+        - name: Комплектующие к шлифовальным машинам
+          slug: komplektuyuschie-k-shlifovalnym
+        - name: Кровельные фрезы
+          slug: krovelnye-frezy
+        - name: Алмазные шлифовальные чашки
+          slug: almaznye-chashki
+        - name: Алмазные коронки для бурения
+          slug: almaznye-koronki
+        - name: Круги абразивные
+          slug: krugi-abrazivnye
+        - name: Круги алмазные
+          slug: krugi-almaznye
+        - name: Зубило и пики
+          slug: zubilo-i-piki
+
+- name: Клининговое оборудование
+  slug: kliningovoe-oborudovanie
+  children:
+    - name: Машины подметальные
+      slug: mashiny-podmetalnye
+    - name: Снегоуборочная техника
+      slug: snegouborochnaya-tehnika
+    - name: Подметальные машины
+      slug: podmetalnye-mashiny
+    - name: Полотёры
+      slug: polotery
+    - name: Процессные машины
+      slug: protsessnye-mashiny
+    - name: Мойки высокого давления
+      slug: moyki-vysokogo-davleniya
+    - name: Оборудование для промывки теплообменников и систем отопления
+      slug: promyvka-teploobmennikov
+
+- name: Электростанции и генераторы
+  slug: elektrostantcii-i-generatory
+  children:
+    - name: Электростанции
+      slug: elektrostantsii
+    - name: Электрогенераторы инверторные
+      slug: invertornye-generatori
+    - name: Электрогенераторы бензиновые
+      slug: generatori-benzinovye
+    - name: Электрогенераторы дизельные
+      slug: generatori-dizelnye
+    - name: Электрогенераторы с функцией сварки
+      slug: generatori-so-svarkoy
+    - name: Электрогенераторы газ/бензин
+      slug: generatori-gaz-benzin
+    - name: Электрогенераторы с системой АВР
+      slug: generatori-avr
+      children:
+        - name: Бензиновые генераторы с системой АВР
+          slug: benzogeneratori-avr
+        - name: Дизельные генераторы с системой АВР
+          slug: dizelgeneratori-avr
+    - name: Блок автоматики для генератора
+      slug: blok-avtomatiki-generatora
+    - name: Комплектующие к генераторам
+      slug: komplektuyuschie-k-generatoram
+
+- name: Садовая техника
+  slug: sadovaya-tehnika
+  children:
+    - name: Культиваторы и мотоблоки
+      slug: kultivatory-i-motobloki
+    - name: Пилы цепные бензиновые
+      slug: pily-tsepnyie-benzinovye
+    - name: Газонокосилки
+      slug: gazonokosilki
+    - name: Мотобуры и мотокультиваторы
+      slug: motobury-i-motokultivatory
+    - name: Дровоколы
+      slug: drovokoly
+    - name: Тракторы садовые
+      slug: traktory-sadovye
+    - name: Шредеры (садовые измельчители)
+      slug: shredery
+    - name: Пылесосы садовые
+      slug: pylesosy-sadovye
+    - name: Триммеры
+      slug: trimmery
+    - name: Аэраторы
+      slug: aeratory
+    - name: Опрыскиватели
+      slug: opryskivateli
+    - name: Воздуходув-пылесос
+      slug: vozduhoduv
+    - name: Садовые пруды
+      slug: sadovye-prudy
+    - name: Пилы цепные электрические
+      slug: pily-tsepnye-elektricheskie
+    - name: Кусторезы и бензоножницы
+      slug: kustorezy-i-nozhnitsy
+    - name: Транспортёры
+      slug: transportyory
+    - name: Навесное и комплектующие
+      slug: navesnoe-i-komplektuyuschie
+      children:
+        - name: Комплектующие к культиваторам и мотоблокам
+          slug: komplektuyuschie-k-kultivatoram
+        - name: Комплектующие к подметальным машинам
+          slug: komplektuyuschie-k-podmetalnym
+        - name: Комплектующие к газонокосилкам
+          slug: komplektuyuschie-k-gazonokosilkam
+        - name: Комплектующие к тракторам
+          slug: komplektuyuschie-k-traktoram
+        - name: Комплектующие к мотобурам
+          slug: komplektuyuschie-k-motoburam
+
+- name: Промышленные пылесосы
+  slug: promyshlennye-pylesosy
+  children:
+    - name: Аспирация
+      slug: aspiratsiya
+    - name: Фильтро-вентиляционные системы
+      slug: filtro-vent-sistemy
+    - name: Пылесосы
+      slug: pylesosy
+    - name: Комплектующие к пылесосам
+      slug: komplektuyuschie-k-pylesosam
+
+- name: Стабилизаторы, ИБП, аккумуляторы
+  slug: stabilizatory-ibp-akkumulyatory
+  children:
+    - name: Стабилизаторы электромеханические
+      slug: stabilizatory-elektromekhanicheskie
+    - name: Стабилизаторы электронные
+      slug: stabilizatory-elektronnye
+    - name: Стабилизаторы трехфазные
+      slug: stabilizatory-trexfaznye
+    - name: Стабилизаторы пониженного напряжения
+      slug: stabilizatory-ponizhennogo
+    - name: Стабилизаторы серии-С (сетевые фильтры)
+      slug: stabilizatory-serii-s
+    - name: Блок реле контроля фаз
+      slug: blok-kontrolya-faz
+    - name: Щитовое оборудование
+      slug: schitovoe-oborudovanie
+    - name: Фильтры сетевые, заземления
+      slug: filtry-setevye
+    - name: Инверторы (преобразователи постоянного тока)
+      slug: invertory
+    - name: ИБП (готовое решение)
+      slug: ibp-gotovye
+    - name: ИБП (инвертор)
+      slug: ibp-invertor
+    - name: Аккумуляторы
+      slug: akkumulyatory
+    - name: Стеллаж-стойки
+      slug: stellazhi-stoyki
+    - name: Автотрансформаторы
+      slug: avtotransformatory
+
+- name: Тепловое оборудование
+  slug: teplovoe-oborudovanie
+  children:
+    - name: Электрические тепловые пушки
+      slug: elektricheskie-teplovye-pushki
+    - name: Газовые тепловые пушки
+      slug: gazovye-teplovye-pushki
+    - name: Дизельные тепловые пушки
+      slug: dizelnye-teplovye-pushki
+    - name: Дизельные тепловые пушки непрямого нагрева
+      slug: dizelnye-nepryamogo-nagreva
+    - name: Инфракрасные тепловые пушки
+      slug: infrakrasnye-pushki
+    - name: Печи на отработанном масле
+      slug: pechi-na-otrabotannom-masle
+
+- name: Насосное оборудование
+  slug: nasosnoe-oborudovanie
+  children:
+    - name: Мотопомпы бензиновые
+      slug: motopompy-benzinovye
+    - name: Мотопомпы дизельные
+      slug: motopompy-dizelnye
+    - name: Рукава для мотопомп
+      slug: rukava-dlya-motopomp
+    - name: Насосы опрессовочные
+      slug: nasosy-opressovochnye
+    - name: Насосы скважинные
+      slug: nasosy-skvazhinnyie
+    - name: Насосные станции
+      slug: nasosnye-stantsii
+    - name: Насосы для перекачки спец. жидкостей
+      slug: nasosy-dlya-spets-zhidkostey
+    - name: Насосы поверхностные
+      slug: nasosy-poverhnostnye
+    - name: Насосы погружные дренажные
+      slug: nasosy-pogruzhnie-drenazhnye
+
+- name: Двигатели
+  slug: dvigateli
+  children:
+    - name: Двигатели бензиновые с вертикальным валом
+      slug: dvigateli-benzinovye-vertikalnyj-val
+    - name: Двигатели бензиновые
+      slug: dvigateli-benzinovye
+    - name: Двигатели бензиновые с редуктором
+      slug: dvigateli-benzinovye-s-reduktorom
+    - name: Двигатели бензиновые двухцилиндровые
+      slug: dvigateli-benzinovye-dvuhcil
+    - name: Двигатели дизельные
+      slug: dvigateli-dizelnye
+    - name: Электрические двигатели
+      slug: elektricheskie-dvigateli
+
+- name: Всё для АВТО транспорта и ремонта
+  slug: vse-dlya-avto
+  children:
+    - name: Зарядные, пуско-зарядные устройства
+      slug: zaryadnye-ustroystva
+    - name: Авто-мото лебёдки
+      slug: avto-moto-lebedki
+    - name: Инфракрасные сушки
+      slug: infrakrasnye-sushki
+    - name: Стойки трансмиссионные
+      slug: stoyki-transmissionnye
+    - name: Подъёмники автомобильные
+      slug: podyomniki-avtomobilnye
+    - name: Опрокидыватели
+      slug: oprokidyvateli
+    - name: Установки проточки тормозных дисков
+      slug: protochka-tormoznyh-diskov
+    - name: Краны гидравлические
+      slug: krany-gidravlicheskie
+    - name: Стенды для двигателя
+      slug: stendy-dlya-dvigatelya
+    - name: Маслосменное оборудование
+      slug: maslosmennoe-oborudovanie
+    - name: Катушки для удаления газов
+      slug: katushki-dlya-gazov
+    - name: Обслуживание автокондиционеров
+      slug: avtokonditsionery-servis
+    - name: Гидравлическое оборудование
+      slug: gidravlicheskoe-avto
+    - name: Лежаки ремонтные
+      slug: lezhaki-remontnye
+    - name: Стапеля
+      slug: stapelya
+    - name: Оборудование для шиномонтажа
+      slug: oborudovanie-dlya-shinomontazha
+    - name: Наборы инструмента и ключей
+      slug: nabory-instrumenta
+
+- name: Складское оборудование
+  slug: skladskoye-oborudovanie
+  children:
+    - name: Тележки гидравлические
+      slug: telezhki-gidravlicheskie
+    - name: Тележки самоходные
+      slug: telezhki-samohodnye
+    - name: Подъемные столы и платформы
+      slug: podyomnye-stoly
+    - name: Бочкокантователи
+      slug: bochkokantovateli
+    - name: Весы
+      slug: vesy
+    - name: Штабелёры гидравлические
+      slug: shtabelery-gidravlicheskie
+    - name: Комплектовщики заказов
+      slug: komplektovschiki
+    - name: Ричтраки и погрузчики
+      slug: richtraki-i-pogruzchiki
+
+- name: Грузоподъёмное оборудование
+  slug: gruzopodyomnoe-oborudovanie
+  children:
+    - name: Грузовые гидравлические домкраты
+      slug: gruzovye-gidravlicheskie-domkraty
+    - name: Люльки строительные (фасадные подъемники)
+      slug: lyulki-stroitelnye
+    - name: Тельферы и тали
+      slug: telfery-i-tali
+    - name: Лебёдки
+      slug: lebedki
+    - name: Подъёмники
+      slug: podyomniki
+    - name: Краны козловые, стреловые
+      slug: krany-kozlovye-strelovye
+    - name: Треноги перегрузочные
+      slug: trenogi-peregruzochnye
+    - name: Магнитные грузозахваты
+      slug: magnitnye-gruzozahvaty
+    - name: Каретка для тали
+      slug: kareta-dlya-tali
+    - name: Роликовые платформы подкатные
+      slug: rolikovye-platformy
+    - name: Домкраты винтовые
+      slug: domkraty-vintovye
+    - name: Домкраты речные
+      slug: domkraty-rechnye
+    - name: Домкраты для автотранспорта
+      slug: domkraty-dlya-avtotransporta
+
+- name: Мебель для мастерской
+  slug: mebel-dlya-masterskoy
+  children:
+    - name: Тележки инструментальные
+      slug: telezhki-instrumentalnye
+    - name: Верстаки
+      slug: verstaki
+    - name: Шкафы инструментальные
+      slug: shkafy-instrumentalnye
+    - name: Столы промышленные
+      slug: stoly-promyshlennye
+    - name: Гаражное оборудование
+      slug: garazhnoe-oborudovanie
+    - name: Инструментальные ящики
+      slug: instrument-alnye-yaschiki
+
+- name: Измерительный инструмент
+  slug: izmeritelnyy-instrument
+  children:
+    - name: Тепловизоры
+      slug: teplovizory
+    - name: Теодолиты
+      slug: teodolity
+    - name: Штативы
+      slug: shtativy
+
+- name: Товары для отдыха
+  slug: tovari-dlya-otdyha
+  children:
+    - name: Мотобуксировщики
+      slug: motobuksirovschiki
+    - name: Лодочные моторы
+      slug: lodochnye-motory
+    - name: Лодки ПВХ
+      slug: lodki-pvh
+    - name: Аксессуары к товарам для отдыха
+      slug: aksessuary-otdyh
+
+- name: Оборудование с дефектом и б/у
+  slug: oborudovanie-s-defektom-bu
+
+# Отдельная таксономия (бренды) — лучше хранить как справочник manufacturers,
+# но если хотите как раздел каталога — оставлено здесь:
+- name: Производитель оборудования
+  slug: proizvoditel-oborudovaniya
+  children:
+    - { name: Splitstone (Россия), slug: splitstone }
+    - { name: Ремеза (Беларусь), slug: remeza }
+    - { name: Champion (Россия), slug: champion }
+    - { name: Diamaster (Россия), slug: diamaster }
+    - { name: Proma (Чехия), slug: proma }
+    - { name: VISPROM (Россия), slug: visprom }
+    - { name: CORMACK (Польша), slug: cormack }
+    - { name: Хайтек инструмент (Россия), slug: hightech-instrument }
+    - { name: HOLZMANN (Австрия), slug: holzmann }
+    - { name: Euroboor (Нидерланды), slug: euroboor }
+    - { name: Ориент (Россия), slug: orient }
+    - { name: НПО Полигон (Россия), slug: npo-poligon }
+    - { name: Энкор-корвет (Россия), slug: enkorkorvet }
+    - { name: ПТК (Россия), slug: ptk }
+    - { name: Сварог (Россия), slug: svarog }
+    - { name: Тарсо (США), slug: tarso }
+    - { name: Stalex (Россия), slug: stalex }
+    - { name: PILOUS (Чехия), slug: pilous }
