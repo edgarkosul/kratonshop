@@ -6,11 +6,11 @@
  * Рекурсивно проходит по *.php (CP1251):
  *  - name: из <h1> (приоритет) или <title>
  *  - slug: имя файла без .php
- *  - images: href всех <a ... class=highslide ...> (картинки товаров/галерей)
+ *  - images: href всех <a ... class=highslide ...>
  *  - description: текст из itemprop="description" (BR → \n)
  *  - is_category: true/false — по слугам из categories.yaml
- *  - + ДОБАВЛЕНО: для категорий добавляем картинки, если на них ссылаются
- *      <a href="category.php"> <img src="..."> … </a> из других файлов
+ *  - Внешние картинки категорий: из <a href="*.php"><img src="..."></a>
+ *  - Для товаров (is_category:false): category_slug/category_name из div.catlink
  *
  * Пример:
  *   php titles-to-yaml.php \
@@ -69,7 +69,7 @@ $rii = new RecursiveIteratorIterator(
                 $rel = ltrim(str_replace('\\', '/', substr($cur->getPathname(), strlen($startDir))), '/');
                 foreach ($ignore as $ig) {
                     $ig = trim($ig, '/');
-                    if ($ig !== '' && strpos($rel.'/', $ig.'/') !== false) return false;
+                    if ($ig !== '' && strpos($rel . '/', $ig . '/') !== false) return false;
                 }
             }
             return true;
@@ -84,8 +84,8 @@ $reH1    = '~<\s*h1\b[^>]*>(.*?)<\s*/\s*h1\s*>~is';
 $reTitle = '~<\s*title\b[^>]*>(.*?)<\s*/\s*title\s*>~is';
 
 // Регексы для <a> и <img>
-$reATagOpen  = '~<\s*a\b([^>]*)>~i';                       // для highslide-изображений (как раньше)
-$reATagBlock = '~<\s*a\b([^>]*)>(.*?)</\s*a\s*>~is';       // блок целиком, чтобы искать <img> внутри
+$reATagOpen  = '~<\s*a\b([^>]*)>~i';                 // одиночное открытие <a ...> (для highslide)
+$reATagBlock = '~<\s*a\b([^>]*)>(.*?)</\s*a\s*>~is'; // блок <a ...>...</a>
 $reImgTag    = '~<\s*img\b([^>]*)>~i';
 
 // Регекс для атрибутов
@@ -93,6 +93,9 @@ $reAttr = '~\b([a-zA-Z_:][-a-zA-Z0-9_:.]*)\s*=\s*(?:"([^"]*)"|\'([^\']*)\'|([^\s
 
 // itemprop="description"
 $reItemprop = '~<\s*([a-z0-9]+)\b[^>]*\bitemprop\s*=\s*(["\'])description\2[^>]*>(.*?)</\s*\1\s*>~is';
+
+// div с классом catlink
+$reDivBlock = '~<\s*div\b([^>]*)>(.*?)</\s*div\s*>~is';
 
 foreach ($rii as $file) {
     /** @var SplFileInfo $file */
@@ -127,7 +130,7 @@ foreach ($rii as $file) {
     // slug из имени файла
     $slug = pathinfo($path, PATHINFO_FILENAME);
 
-    // images: <a ... class=highslide ... href="..."> (как раньше)
+    // images: <a ... class=highslide ... href="...">
     $images = [];
     if (preg_match_all($reATagOpen, $html, $aMatches, PREG_SET_ORDER)) {
         foreach ($aMatches as $tag) {
@@ -163,22 +166,93 @@ foreach ($rii as $file) {
         }
     }
 
-    // Фиксируем запись (без внешних картинок категорий — их добавим после обхода всех файлов)
+    // Флаг категории по списку из categories.yaml
     $isCategory = isset($categorySlugsSet[$slug]);
-    $entries[] = [
+    // новый точный регекс: берём именно <div ... class="...catlink...">...</div>
+    $reCatlinkDiv = '~<\s*div\b[^>]*\bclass\s*=\s*(?:"[^"]*\bcatlink\b[^"]*"|\'[^\']*\bcatlink\b[^\']*\'|catlink)(?=[\s>])[^>]*>(.*?)</\s*div\s*>~is';
+
+    // Для товаров (is_category:false) — вытягиваем категорию из <div class="catlink">…</div>
+    $categorySlug = null;
+    $categoryName = null;
+
+    if (!$isCategory) {
+        // ищем ровно <div class="...catlink...">...</div>
+        if (preg_match($reCatlinkDiv, $html, $divM)) {
+            $divInner = $divM[1] ?? '';
+
+            // достаем все <a ...>...</a> из крошек
+            if (preg_match_all($reATagBlock, $divInner, $crumbs, PREG_SET_ORDER)) {
+                $links = [];
+                foreach ($crumbs as $ab) {
+                    $aAttr = $ab[1] ?? '';
+                    $aTxt  = $ab[2] ?? '';
+                    $attrs = parseAttributes($aAttr, $reAttr);
+
+                    $href = html_entity_decode(trim($attrs['href'] ?? ''), ENT_QUOTES | ENT_HTML5, 'UTF-8');
+                    $text = normalizeText($aTxt);
+
+                    // пропустим пустые
+                    if ($href === '' && $text === '') continue;
+
+                    $links[] = ['href' => $href, 'text' => $text];
+                }
+
+                // первые две — "О нас", "Каталог инструмента". Берём ПОСЛЕДНЮЮ из оставшихся.
+                if (count($links) >= 3) {
+                    $catTrail = array_slice($links, 2);
+                    $last = end($catTrail);
+                    if ($last) {
+                        $hrefPath = parse_url($last['href'], PHP_URL_PATH) ?? $last['href'];
+                        $base = basename($hrefPath);
+                        if ($base !== '' && str_ends_with_ci($base, '.php')) {
+                            $categorySlug = substr($base, 0, -4);
+                            $categoryName = $last['text'] ?? null;
+                        }
+                    }
+                }
+            }
+        } else {
+            // необязательно, но поможет понять, где не нашли
+            // fwrite(STDERR, "ℹ️  catlink не найден: {$path}\n");
+        }
+    }
+
+
+
+
+    // Фиксируем запись (внешние картинки категорий добавим после обхода)
+    $item = [
         'name'        => $name,
         'slug'        => $slug,
         'images'      => $images,
         'is_category' => $isCategory,
-    ] + ($description !== null ? ['description' => $description] : []);
+    ];
+
+    if (!$isCategory && $categorySlug) {
+        $item['category_slug'] = $categorySlug;
+        if ($categoryName) {
+            $item['category_name'] = $categoryName;
+        }
+    }
+
+    if ($description !== null) {
+        $item['description'] = $description;
+    }
+    if (!$isCategory && $categorySlug) {
+        $item['category_slug'] = $categorySlug;
+        if ($categoryName) {
+            $item['category_name'] = $categoryName;
+        }
+    }
+
+    $entries[] = $item;
 
     /** Собираем внешние картинки категорий:
-     *  Ищем все <a ... href="*.php">...</a>, внутри — <img ... src="...">,
-     *  в карту $categoryImagesFromRefs[slugFromHref][] = src
+     *  <a href="category.php"> <img src="..."> … </a>
      */
     if (preg_match_all($reATagBlock, $html, $aBlocks, PREG_SET_ORDER)) {
         foreach ($aBlocks as $aBlock) {
-            $aAttr = $aBlock[1] ?? '';
+            $aAttr  = $aBlock[1] ?? '';
             $aInner = $aBlock[2] ?? '';
             if ($aAttr === '') continue;
 
@@ -207,8 +281,6 @@ foreach ($rii as $file) {
                     if ($src === '') continue;
 
                     $src = html_entity_decode(trim($src), ENT_QUOTES | ENT_HTML5, 'UTF-8');
-
-                    // Сохраняем в карту (потом добавим к категориям с таким слугом)
                     $categoryImagesFromRefs[$targetSlug][] = $src;
                 }
             }
@@ -218,11 +290,9 @@ foreach ($rii as $file) {
 
 /** 3) После обхода — добавляем найденные внешние картинки к категориям */
 if ($entries && $categoryImagesFromRefs) {
-    // Уникализируем списки
     foreach ($categoryImagesFromRefs as $k => $arr) {
         $categoryImagesFromRefs[$k] = array_values(array_unique($arr));
     }
-
     foreach ($entries as &$e) {
         if (!empty($e['is_category']) && isset($categoryImagesFromRefs[$e['slug']])) {
             $merged = array_values(array_unique(array_merge($e['images'] ?? [], $categoryImagesFromRefs[$e['slug']])));
@@ -241,7 +311,8 @@ echo "📄 YAML: {$outPath}\n";
 
 /* ================= helpers ================= */
 
-function collectCategorySlugs($nodes): array {
+function collectCategorySlugs($nodes): array
+{
     $out = [];
     if (!is_array($nodes)) return $out;
 
@@ -262,35 +333,39 @@ function collectCategorySlugs($nodes): array {
     return array_values(array_unique(array_filter($out, fn($s) => $s !== '')));
 }
 
-function isAssoc(array $arr): bool {
+function isAssoc(array $arr): bool
+{
     return array_keys($arr) !== range(0, count($arr) - 1);
 }
 
-function normalizeText(string $s): string {
+function normalizeText(string $s): string
+{
     $s = strip_tags($s);
     $s = html_entity_decode($s, ENT_QUOTES | ENT_HTML5, 'UTF-8');
     $s = preg_replace('~\s+~u', ' ', $s);
     return trim($s);
 }
 
-function parseOptions(array $long): array {
+function parseOptions(array $long): array
+{
     if (function_exists('getopt')) {
         $opts = getopt('', $long);
         return [$opts ?: []];
     }
     $o = [];
     foreach (array_slice($_SERVER['argv'], 1) as $a) {
-        if (substr($a,0,2) === '--' && strpos($a,'=') !== false) {
-            [$k,$v] = explode('=', substr($a,2), 2);
+        if (substr($a, 0, 2) === '--' && strpos($a, '=') !== false) {
+            [$k, $v] = explode('=', substr($a, 2), 2);
             $o[$k] = $v;
-        } elseif (substr($a,0,2) === '--') {
-            $o[substr($a,2)] = true;
+        } elseif (substr($a, 0, 2) === '--') {
+            $o[substr($a, 2)] = true;
         }
     }
     return [$o];
 }
 
-function parseAttributes(string $attrStr, string $reAttr): array {
+function parseAttributes(string $attrStr, string $reAttr): array
+{
     $attrs = [];
     if (preg_match_all($reAttr, $attrStr, $am, PREG_SET_ORDER)) {
         foreach ($am as $a) {
@@ -313,7 +388,8 @@ function parseAttributes(string $attrStr, string $reAttr): array {
     return $attrs;
 }
 
-function str_ends_with_ci(string $haystack, string $needle): bool {
+function str_ends_with_ci(string $haystack, string $needle): bool
+{
     $len = strlen($needle);
     if ($len === 0) return true;
     return strcasecmp(substr($haystack, -$len), $needle) === 0;

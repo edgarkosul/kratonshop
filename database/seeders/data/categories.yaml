@@ -1,975 +1,1875 @@
-- name: Компрессорное оборудование
+-
+  name: 'Компрессорное оборудование'
   slug: kompressornoe-oborudovanie
+  img: pics/iuleft000011.jpg
   children:
-    - name: Компрессоры с ременной передачей
+    -
+      name: 'Компрессоры с ременной передачей'
       slug: kompressora-s-remennoy-peredachey
-    - name: Компрессоры с вертикальным ресивером
+      img: pics/g1_560.jpg
+    -
+      name: 'Компрессоры с вертикальным ресивером'
       slug: kompressory-s-vertikalnym-resiverom
-    - name: Компрессоры поршневые безмасляные
+      img: pics/g1_812.jpg
+    -
+      name: 'Компрессоры поршневые безмасляные'
       slug: kompressora-porshnevye-bezmaslyanye
+      img: pics/g1_644.jpg
       children:
-        - name: Компрессоры поршневые безмасляные бытовые
+        -
+          name: 'Компрессоры поршневые безмасляные бытовые'
           slug: kompressory-porshnevye-bezmaslyanye-bytovye
-        - name: Компрессоры поршневые безмасляные общего назначения
+          img: pics/g1_800.jpg
+        -
+          name: 'Компрессоры поршневые безмасляные общего назначения'
           slug: kompressory-porshnevye-bezmaslyanye-obschego-naznacheniya
-        - name: Компрессоры поршневые безмасляные медицинские
+          img: pics/g1_801.jpg
+        -
+          name: 'Компрессоры поршневые безмасляные медицинские'
           slug: kompressory-porshnevye-bezmaslyanye-meditsinskie
-    - name: Компрессоры винтовые
+          img: pics/g1_802.jpg
+    -
+      name: 'Компрессоры винтовые'
       slug: kompressory-vintovye
+      img: pics/iuscrhtml000064e.jpg
       children:
-        - name: Компрессоры
+        -
+          name: Компрессоры
           slug: kompressory
-        - name: Компрессоры с ресивером
+          img: pics/iuscrhtml000073.png
+        -
+          name: 'Компрессоры с ресивером'
           slug: kompressory-s-resiverom
-        - name: Компрессоры с ресивером и осушителем
+          img: pics/g1_1023.png
+        -
+          name: 'Компрессоры с ресивером и осушителем'
           slug: kompressory-s-resiverom-i-osushitelem
-        - name: Компрессоры безмасляные
+          img: pics/g1_1022.jpg
+        -
+          name: 'Компрессоры безмасляные'
           slug: kompressory-bezmaslyanye-s-resiverom-i-osushitelem
-        - name: Компрессоры автономные
+          img: pics/g1_1035.jpg
+        -
+          name: 'Компрессоры автономные'
           slug: peredvizhnye-vintovye-kompressornye-stantsii
-        - name: Магистральные фильтры
+          img: pics/g1_780.jpg
+        -
+          name: 'Магистральные фильтры'
           slug: magistralnye-filtry
-        - name: Одноступенчатые винтовые блоки
+          img: pics/g1_1025.png
+        -
+          name: 'Одноступенчатые винтовые блоки'
           slug: odnostupenchatye-vintovye-bloki
-    - name: Осушители рефрижераторного типа
+          img: pics/g1_1038.png
+    -
+      name: 'Осушители рефрижераторного типа'
       slug: osushiteli-refrizheratornogo-tipa
-    - name: Осушители адсорбционные
+      img: pics/g1_965.jpg
+    -
+      name: 'Осушители адсорбционные'
       slug: osushiteli-adsorbtsionnye
-    - name: Циклонные сепараторы
+      img: pics/g1_1036.png
+    -
+      name: 'Циклонные сепараторы'
       slug: tsiklonnye-separatory
-    - name: Компрессоры повышенного давления
+      img: pics/g1_1037.jpg
+    -
+      name: 'Компрессоры повышенного давления'
       slug: kompressora-povyshennogo-davleniya
-    - name: Ресиверы
+      img: pics/g1_573.jpg
+    -
+      name: Ресиверы
       slug: resivery
-    - name: Частотные преобразователи
+      img: pics/g1_630.jpg
+    -
+      name: 'Частотные преобразователи'
       slug: chastotnye-preobrazovateli
-    - name: Компрессоры с прямой передачей
+      img: pics/g1_1040.png
+    -
+      name: 'Компрессоры с прямой передачей'
       slug: kompressora-s-pryamoy-peredachey
-    - name: Комплект для мобильного шиномонтажа
+      img: pics/g1_477.jpg
+    -
+      name: 'Комплект для мобильного шиномонтажа'
       slug: komplekt-dlya-mobilnogo-shinomontazha
-    - name: Компрессоры строительные передвижные
+      img: pics/g1_832.jpg
+    -
+      name: 'Компрессоры строительные передвижные'
       slug: kompressora-stroitelnye-peredvizhnye
-    - name: Компрессоры с осушителем холодильного типа
+      img: pics/g1_575.jpg
+    -
+      name: 'Компрессоры с осушителем холодильного типа'
       slug: kompressora-s-osushitelem-holodilnogo-tipa
-    - name: Компрессоры спиральные безмасляные
+      img: pics/g1_574.jpg
+    -
+      name: 'Компрессоры спиральные безмасляные'
       slug: kompressory-spiralnye-bezmaslyanye
-    - name: Пневмо арматура
+      img: pics/g1_779.jpg
+    -
+      name: 'Пневмо арматура'
       slug: pnevmo-armatura
-    - name: Пневмоинструмент
+      img: pics/g1_480.jpg
+    -
+      name: Пневмоинструмент
       slug: pnevmoinstrument
-    - name: Запчасти для компрессоров
+      img: pics/g1_479.jpg
+    -
+      name: 'Запчасти для компрессоров'
       slug: zapchasti-dlya-kompressorov
-    - name: Пескоструйные аппараты
+      img: pics/g1_769.jpg
+    -
+      name: 'Пескоструйные аппараты'
       slug: peskostruynye-apparaty
-
-- name: Гидравлический инструмент
+      img: pics/g1_958.jpg
+-
+  name: 'Гидравлический инструмент'
   slug: gidravlicheskiy-instrument
+  img: pics/iuleft000042.jpg
   children:
-    - name: Гидравлические станции (маслостанции)
+    -
+      name: 'Гидравлические станции (маслостанции)'
       slug: gidravlicheskie-stantsii-maslostantsii
-    - name: Домкраты
+      img: pics/iuscrhtml000072.jpg
+    -
+      name: Домкраты
       slug: domkraty
+      img: pics/iugru000065e.jpg
       children:
-        - name: Грузовые домкраты с пружинным возвратом штока
+        -
+          name: 'Грузовые домкраты с пружинным возвратом штока'
           slug: gruzovye-domkraty-s-pruzhinnym-vozvratom-shtoka
-        - name: Грузовые домкраты с гравитационным возвратом штока
+          img: pics/g1_934.jpg
+        -
+          name: 'Грузовые домкраты с гравитационным возвратом штока'
           slug: gruzovye-domkraty-s-gravitatsionnym-vozvratom-shtoka
-        - name: Грузовые домкраты с гидравлическим возвратом штока
+          img: pics/g1_1004.jpg
+        -
+          name: 'Грузовые домкраты с гидравлическим возвратом штока'
           slug: gruzovye-domkraty-s-gidravlicheskim-vozvratom-shtoka
-        - name: Домкраты алюминиевые грузовые ДГА с пружинным возвратом
+          img: pics/g1_936.jpg
+        -
+          name: 'Домкраты алюминиевые грузовые ДГА с пружинным возвратом'
           slug: domkraty-alyuminievye-gruzovye-dga-s-pruzhinnym-vozvratom
-        - name: Домкраты алюминиевые грузовые ДГА с гидравлическим возвратом
+          img: pics/g1_935.jpg
+        -
+          name: 'Домкраты алюминиевые грузовые ДГА с гидравлическим возвратом'
           slug: domkraty-alyuminievye-gruzovye-dga-s-gidravlicheskim-vozvratom
-        - name: Домкраты алюминиевые грузовые гидравлические с фиксирующей гайкой и пружинным возвратом штока
+          img: pics/g1_981.jpg
+        -
+          name: 'Домкраты алюминиевые грузовые гидравлические с фиксирующей гайкой и пружинным возвратом штока'
           slug: domkraty-alyuminievye-gruzovye-gidravlicheskie
-        - name: Домкраты с полым штоком
+          img: pics/g1_982.jpg
+        -
+          name: 'Домкраты с полым штоком'
           slug: domkraty-s-polym-shtokom
-        - name: Грузовые домкраты с гидравлическим возвратом штока и резьбой на гильзе
+          img: pics/g1_943.jpg
+        -
+          name: 'Грузовые домкраты с гидравлическим возвратом штока и резьбой на гильзе'
           slug: gruzovye-domkraty-s-gidravlicheskim-vozvratom-shtoka-i-rezboy-na-gilze
-        - name: Домкраты грузовые гидравлические ДГ с фиксирующей гайкой
+          img: pics/g1_1014.jpg
+        -
+          name: 'Домкраты грузовые гидравлические ДГ с фиксирующей гайкой'
           slug: domkraty-gruzovye-gidravlicheskie-dg-s-fiksiruyuschey-gaykoy
-        - name: Домкраты телескопические грузовые
+          img: pics/g1_949.jpg
+        -
+          name: 'Домкраты телескопические грузовые'
           slug: domkraty-teleskopicheskie-gruzovye
-        - name: Домкраты с низким подхватом
+          img: pics/g1_937.jpg
+        -
+          name: 'Домкраты с низким подхватом'
           slug: domkraty-avtonomnye-s-nizkim-podhvatom
-        - name: Домкраты низкие гидравлические
+          img: pics/g1_938.jpg
+        -
+          name: 'Домкраты низкие гидравлические'
           slug: domkraty-nizkie-gidravlicheskie
-        - name: Домкраты гидравлические путевые
+          img: pics/g1_961.jpeg
+        -
+          name: 'Домкраты гидравлические путевые'
           slug: domkraty-gidravlicheskie-putevye
-        - name: Домкраты гидравлические автономные
+          img: pics/g1_1005.jpg
+        -
+          name: 'Домкраты гидравлические автономные'
           slug: domkraty-gidravlicheskie-avtonomnye
-        - name: Домкраты пневмогидравлические
+          img: pics/g1_1026.png
+        -
+          name: 'Домкраты пневмогидравлические'
           slug: domkraty-pnevmogidravlicheskie
-        - name: Плавающие опоры для домкратов
+          img: pics/g1_1030.jpg
+        -
+          name: 'Плавающие опоры для домкратов'
           slug: plavayuschie-opory-dlya-domkratov
-    - name: Гидроцилиндры для пресса и трубогибов
+          img: pics/iugru000075e.jpg
+    -
+      name: 'Гидроцилиндры для пресса и трубогибов'
       slug: gidrotsilindry-dlya-pressa
-    - name: Гидроцилиндры для кузовных и арматурных работ
+      img: pics/g1_986.jpg
+    -
+      name: 'Гидроцилиндры для кузовных и арматурных работ'
       slug: gidrotsilindr
-    - name: Станки шинообрабатывающие
+      img: pics/g1_1017.jpg
+    -
+      name: 'Станки шинообрабатывающие'
       slug: shinoobrabatyvayuschie-stanki
-    - name: Арматурогибы гидравлические
+      img: pics/iuscrhtml000056.jpg
+    -
+      name: 'Арматурогибы гидравлические'
       slug: armaturogiby-gidravlicheskie
-    - name: Арматурорезы гидравлические
+      img: pics/g1_988.jpg
+    -
+      name: 'Арматурорезы гидравлические'
       slug: armaturorezy-gidravlicheskie
-    - name: Универсальный гидравлический инструмент
+      img: pics/g1_989.jpg
+    -
+      name: 'Универсальный гидравлический инструмент'
       slug: universalnyy-gidravlicheskiy-instrument
-    - name: Гайковерты гидравлические
+      img: pics/g1_1027.jpg
+    -
+      name: 'Гайковерты гидравлические'
       slug: gaykoverty-gidravlicheskie-i-kassety
+      img: pics/g1_1009.png
       children:
-        - name: Гайковерты гидравлические торцевые
+        -
+          name: 'Гайковерты гидравлические торцевые'
           slug: gaykoverty-gidravlicheskie
-        - name: Гайковерты гидравлические кассетные
+          img: pics/g1_990.jpg
+        -
+          name: 'Гайковерты гидравлические кассетные'
           slug: gaykoverty-gidravlicheskie-kassetnyy
-        - name: Кассеты для гидравлического гайковерта ГГМК-2400
+          img: pics/g1_1049.jpg
+        -
+          name: 'Кассеты для гидравлического гайковерта ГГМК-2400'
           slug: kasseta-dlya-ggmk-2400
-        - name: Кассеты для гидравлического гайковерта ГГМК-6500
+          img: pics/iugru000081e.png
+        -
+          name: 'Кассеты для гидравлического гайковерта ГГМК-6500'
           slug: kassety-dlya-ggmk-6500
-        - name: Кассеты для гидравлического гайковерта ГГМК-11800
+          img: pics/iugru000084e.png
+        -
+          name: 'Кассеты для гидравлического гайковерта ГГМК-11800'
           slug: kassety-dlya-ggmk-11800
-        - name: Кассеты для гидравлического гайковерта ГГМК-18500
+          img: pics/iugru000087e.png
+        -
+          name: 'Кассеты для гидравлического гайковерта ГГМК-18500'
           slug: kassety-dlya-ggmk-18500
-        - name: Кассеты для гидравлического гайковерта серии TX
+          img: pics/iugru000090e.png
+        -
+          name: 'Кассеты для гидравлического гайковерта серии TX'
           slug: kassety-dlya-gidravlicheskogo-gaykoverta-serii-tx
-        - name: Вставка для кассеты гайковерта серии TX
+          img: pics/g1_1010.jpg
+        -
+          name: 'Вставка для кассеты гайковерта серии TX'
           slug: vstavka-dlya-kassety-gaykoverta-serii-tx
-        - name: Вставка для кассеты гайковерта серии ГГМК
+          img: pics/g1_1011.png
+        -
+          name: 'Вставка для кассеты гайковерта серии ГГМК'
           slug: vstavka-dlya-kassety-gaykoverta-serii-ggmk
-        - name: Переходник с кассеты на квадрат
+          img: pics/g1_1012.png
+        -
+          name: 'Переходник с кассеты на квадрат'
           slug: perehodnik-s-kassety-na-kvadrat
-        - name: Головки торцевые ударные для гидравлических гайковертов
+          img: pics/g1_1048.png
+        -
+          name: 'Головки торцевые ударные для гидравлических гайковертов'
           slug: golovki-tortsevye-udarnye-dlya-gidravlicheskih-gaykovertov
-    - name: Гайкорезы гидравлические
+          img: pics/g1_1047.jpg
+    -
+      name: 'Гайкорезы гидравлические'
       slug: gaykorezy-gidravlicheskie
-    - name: Кабелерезы и тросорезы
+      img: pics/g1_996.jpg
+    -
+      name: 'Кабелерезы и тросорезы'
       slug: gidravlicheskie-kabelerezy
-    - name: Квадраторезы гидравлические
+      img: pics/g1_997.jpg
+    -
+      name: 'Квадраторезы гидравлические'
       slug: kvadratorezy-gidravlicheskie
-    - name: Пресс для опрессовки
+      img: pics/g1_1003.png
+    -
+      name: 'Пресс для опрессовки'
       slug: press-dlya-opressovki
-    - name: Оборудование для производства РВД
+      img: pics/g1_991.jpg
+    -
+      name: 'Оборудование для производства РВД'
       slug: oborudovanie-dlya-proizvodstva-rvd
-    - name: Инструмент для пресс-фитинга
+      img: pics/g1_1050.jpg
+    -
+      name: 'Инструмент для пресс-фитинга'
       slug: instrument-dlya-press-fitinga
-    - name: Разгонщики фланцев
+      img: pics/g1_1039.jpg
+    -
+      name: 'Разгонщики фланцев'
       slug: razgonschiki-flantsev
-    - name: Разжим-кусачки гидравлические
+      img: pics/g1_987.png
+    -
+      name: 'Разжим-кусачки гидравлические'
       slug: razzhimy-gidravlicheskie
-    - name: Съемники гидравлический
+      img: pics/g1_1002.png
+    -
+      name: 'Съемники гидравлический'
       slug: semniki-gidravlicheskiy
-    - name: Тензорные домкраты
+      img: pics/g1_984.jpg
+    -
+      name: 'Тензорные домкраты'
       slug: tenzornye-domkraty
-    - name: Уголкорезы гидравлические
+      img: pics/g1_983.jpg
+    -
+      name: 'Уголкорезы гидравлические'
       slug: ugolkorezy-gidravlicheskie
-    - name: Шинорезы гидравлические
+      img: pics/g1_999.png
+    -
+      name: 'Шинорезы гидравлические'
       slug: shinorezy-gidravlicheskie
-    - name: Шинодыры гидравлические
+      img: pics/g1_985.jpg
+    -
+      name: 'Шинодыры гидравлические'
       slug: shinodyry-gidravlicheskie
-    - name: Шиногибы гидравлические
+      img: pics/g1_992.jpg
+    -
+      name: 'Шиногибы гидравлические'
       slug: shinogiby-gidravlicheskie
-    - name: Швеллерорез гидравлический
+      img: pics/g1_993.jpg
+    -
+      name: 'Швеллерорез гидравлический'
       slug: shvellerorez-gidravlicheskiy
-    - name: Пресса гидравлические
+      img: pics/g1_994.jpg
+    -
+      name: 'Пресса гидравлические'
       slug: pressa-gidravlicheskie
-    - name: Выпрессовщик шкворней
+      img: pics/g1_1019.jpg
+    -
+      name: 'Выпрессовщик шкворней'
       slug: vypressovschik-shkvorney
-    - name: Опрессовка гидравлики
+      img: pics/g1_1043.jpg
+    -
+      name: 'Опрессовка гидравлики'
       slug: opressovka-gidravliki
-    - name: Трубогибы гидравлические
+      img: pics/g1_1021.png
+    -
+      name: 'Трубогибы гидравлические'
       slug: trubogiby-gidravlicheskie
-    - name: Шланги и комплектующие
+      img: pics/g1_1032.jpg
+    -
+      name: 'Шланги и комплектующие'
       slug: shlangi-i-komplektuyuschie
-    - name: Матрицы и пуансоны для шинодыров и опрессовки
+      img: pics/g1_941.jpg
+    -
+      name: 'Матрицы и пуансоны для шинодыров и опрессовки'
       slug: matritsy-i-puansony-dlya-shinodyrov
-    - name: Ножи для гидравлического оборудования
+      img: pics/g1_940.jpg
+    -
+      name: 'Ножи для гидравлического оборудования'
       slug: nozhi-dlya-gidravlicheskogo-oborudovaniya
-
-- name: Сварочное оборудование
+      img: pics/g1_1046.jpg
+-
+  name: 'Сварочное оборудование'
   slug: svarochnoe-oborudovanie
+  img: pics/iuleft000012.jpg
   children:
-    - name: Сварочные аппараты MMA
+    -
+      name: 'Сварочные аппараты MMA'
       slug: svarochnye-invertornye-apparaty
-    - name: Сварочные полуавтоматы
+      img: pics/g1_367.jpg
+    -
+      name: 'Сварочные полуавтоматы'
       slug: svarochnye-poluavtomaty
-    - name: Аппараты аргонодуговой сварки
+      img: pics/g1_494.jpg
+    -
+      name: 'Аппараты аргонодуговой сварки'
       slug: apparaty-argonodugovoy-svarki
-    - name: Аппараты плазменной резки
+      img: pics/g1_547.jpg
+    -
+      name: 'Аппараты плазменной резки'
       slug: apparaty-plazmennoy-rezki
-    - name: Машины для термической резки металла
+      img: pics/g1_495.jpg
+    -
+      name: 'Машины для термической резки металла'
       slug: mashiny-gazovoy-rezki
-    - name: Аппарат для приварки шпилек
+      img: pics/g1_875.jpg
+    -
+      name: 'Аппарат для приварки шпилек'
       slug: tochechnaya-svarka-spot
-    - name: Машины контактной сварки
+      img: pics/g1_531.jpg
+    -
+      name: 'Машины контактной сварки'
       slug: mashiny-kontaktnoy-svarki
-    - name: Аппараты шовной сварки
+      img: pics/g1_834.jpg
+    -
+      name: 'Аппараты шовной сварки'
       slug: apparaty-shovnoy-svarki
-    - name: Споттеры
+      img: pics/g1_816.jpg
+    -
+      name: Споттеры
       slug: spottery
-    - name: Сварочные трактора, сварка под флюсом
+      img: pics/g1_559.jpg
+    -
+      name: 'Сварочные трактора, сварка под флюсом'
       slug: svarochnye-traktora
-    - name: Лазерное оборудование
+      img: pics/g1_782.jpg
+    -
+      name: 'Лазерное оборудование'
       slug: apparaty-dlya-ruchnoy-lazernoy-svarki-i-rezki
-    - name: Портальные установки плазменной резки
+      img: pics/g1_950.jpg
+    -
+      name: 'Портальные установки плазменной резки'
       slug: portalnye-ustanovki-plazmennoy-rezki
-    - name: Вращатели сварочные
+      img: pics/g1_819.jpg
+    -
+      name: 'Вращатели сварочные'
       slug: vraschatel-svarochnyy
-    - name: Столы сварочно-монтажные
+      img: pics/g1_787.jpg
+    -
+      name: 'Столы сварочно-монтажные'
       slug: stoly-svarochno-montazhnye
-    - name: Выносные подающие механизмы
+      img: pics/g1_947.png
+    -
+      name: 'Выносные подающие механизмы'
       slug: vynosnye-podayuschie-mehanizmy
-    - name: Оборудование для газосварочных работ
+      img: pics/g1_952.jpg
+    -
+      name: 'Оборудование для газосварочных работ'
       slug: oborudovanie-dlya-gazosvarochnyh-rabot
-    - name: Станции охлаждения
+      img: pics/g1_1016.jpg
+    -
+      name: 'Станции охлаждения'
       slug: stantsiya-ohlazhdeniya
-    - name: Палатки сварщика
+      img: pics/g1_788.jpg
+    -
+      name: 'Палатки сварщика'
       slug: palatki-svarschika
-    - name: Тележки для сварочных аппаратов
+      img: pics/g1_871.jpg
+    -
+      name: 'Тележки для сварочных аппаратов'
       slug: telezhki-dlya-svarochnyh-apparatov
-    - name: Сварочные горелки MIG
+      img: pics/g1_953.jpg
+    -
+      name: 'Сварочные горелки MIG'
       slug: svarochnye-gorelki-mig
-    - name: Сварочные горелки TIG
+      img: pics/g1_836.jpg
+    -
+      name: 'Сварочные горелки TIG'
       slug: svarochnaya-gorelka-tig
-    - name: Плазмотроны CUT
+      img: pics/g1_807.jpg
+    -
+      name: 'Плазмотроны CUT'
       slug: plazmatrony-cut
-    - name: Оснастка с машинам газовой резки
+      img: pics/g1_806.jpg
+    -
+      name: 'Оснастка с машинам газовой резки'
       slug: osnastka-s-mashinam-gazovoy-rezki
-    - name: Оснастка к столам сварочно-монтажным
+      img: pics/g1_876.jpg
+    -
+      name: 'Оснастка к столам сварочно-монтажным'
       slug: osnastka-k-stolam-svarochno-montazhnym
-    - name: Сварочные аксессуары
+      img: pics/g1_948.jpg
+    -
+      name: 'Сварочные аксессуары'
       slug: svarochnye-aksessuary
-    - name: Электропечи и термопеналы
+      img: pics/g1_492.jpg
+    -
+      name: 'Электропечи и термопеналы'
       slug: elektropechi-i-termopenaly
-    - name: Редукторы и регуляторы
+      img: pics/g1_969.jpg
+    -
+      name: 'Редукторы и регуляторы'
       slug: reduktory-i-regulyatory
-    - name: Расходники для сварки
+      img: pics/g1_811.jpg
+    -
+      name: 'Расходники для сварки'
       slug: rashodniki-dlya-svarki
-    - name: Маски сварщика
+      img: pics/g1_365.jpg
+    -
+      name: 'Маски сварщика'
       slug: maski-svarschika
-    - name: Средства защиты
+      img: pics/g1_775.jpg
+    -
+      name: 'Средства защиты'
       slug: sredstva-zaschity
-
-- name: Станки и оборудование
+      img: pics/g1_815.jpg
+-
+  name: 'Станки и оборудование'
   slug: stanki-i-oborudovanie
+  img: pics/iuleft000019.jpg
   children:
-    - name: СТАНКИ ДЛЯ ДЕРЕВООБРАБОТКИ
+    -
+      name: 'СТАНКИ ДЛЯ ДЕРЕВООБРАБОТКИ'
       slug: stanki-dlya-derevoobrabotki
+      img: ''
       children:
-        - name: Пилы торцовочно-усовочные
+        -
+          name: 'Пилы торцовочно-усовочные'
           slug: pily-tortsovochno-usovochnye
-        - name: Станки многооперационные деревообрабатывающие
+          img: ''
+        -
+          name: 'Станки многооперационные деревообрабатывающие'
           slug: stanki-mnogooperatsionnye-derevoobrabatyvayuschie
-        - name: Станки ленточнопильные и лобзиковые по дереву
+          img: ''
+        -
+          name: 'Станки ленточнопильные и лобзиковые по дереву'
           slug: stanki-lentochnopilnye-i-lobzikovye-po-derevu
-        - name: Станки круглопильные
+          img: ''
+        -
+          name: 'Станки круглопильные'
           slug: stanki-kruglopilnye
-        - name: Форматно-раскроечные станки
+          img: ''
+        -
+          name: 'Форматно-раскроечные станки'
           slug: formatno-raskroechnye-stanki
-        - name: Станки фуговально-рейсмусовые
+          img: ''
+        -
+          name: 'Станки фуговально-рейсмусовые'
           slug: stanki-fugovalno-reysmusovye
-        - name: Станки рейсмусовый
+          img: ''
+        -
+          name: 'Станки рейсмусовый'
           slug: stanki-reysmusovyy
-        - name: Станки фуговальные
+          img: ''
+        -
+          name: 'Станки фуговальные'
           slug: stanki-fugovalnye
-        - name: Станки фрезерные по дереву
+          img: ''
+        -
+          name: 'Станки фрезерные по дереву'
           slug: stanki-vertikalno-frezernye-po-derevu
-        - name: Столы фрезерные и комплектующие
+          img: ''
+        -
+          name: 'Столы фрезерные и комплектующие'
           slug: stoly-frezernye
-        - name: Станки токарные по дереву
+          img: ''
+        -
+          name: 'Станки токарные по дереву'
           slug: stanki-tokarnye-po-derevu
-        - name: Станки сверлильно-присадочные
+          img: ''
+        -
+          name: 'Станки сверлильно-присадочные'
           slug: stanki-sverlilno-prisadochnye
-        - name: Станки для обработки кромки
+          img: ''
+        -
+          name: 'Станки для обработки кромки'
           slug: stanki-dlya-obrabotki-kromki
-        - name: Автоподатчик заготовок
+          img: ''
+        -
+          name: 'Автоподатчик заготовок'
           slug: avtopodatchik-zagotovok
-    - name: СТАНКИ ДЛЯ МЕТАЛЛООБРАБОТКИ
+          img: ''
+    -
+      name: 'СТАНКИ ДЛЯ МЕТАЛЛООБРАБОТКИ'
       slug: stanki-dlya-metaloobrabotki
+      img: pics/g1_814.jpg
       children:
-        - name: Станки сверлильные на магнитном основании
+        -
+          name: 'Станки сверлильные на магнитном основании'
           slug: stanki-sverlilnye-na-magnitnom-osnovanii
-        - name: Станки ленточнопильные по металлу
+          img: pics/iugru000026.jpg
+        -
+          name: 'Станки ленточнопильные по металлу'
           slug: stanki-lentochnopilnye-po-metallu
-        - name: Станки кромкорезные
+          img: pics/g1_72.jpg
+        -
+          name: 'Станки кромкорезные'
           slug: stanki-kromkoreznye
-        - name: Труборезы ручные и электрические
+          img: pics/g1_631.jpg
+        -
+          name: 'Труборезы ручные и электрические'
           slug: elektrotruborezy
-        - name: Станки токарные по металлу
+          img: pics/g1_873.jpg
+        -
+          name: 'Станки токарные по металлу'
           slug: stanki-tokarnye-po-metallu
-        - name: Станки фрезерные по металлу
+          img: pics/g1_570.jpg
+        -
+          name: 'Станки фрезерные по металлу'
           slug: stanki-frezernye-po-metallu
-        - name: Станки электроэрозионные
+          img: pics/g1_513.jpg
+        -
+          name: 'Станки электроэрозионные'
           slug: elektroerozionnye-stanki
-        - name: Станки вырубные, раскрой металла
+          img: pics/g1_964.jpg
+        -
+          name: 'Станки вырубные, раскрой металла'
           slug: nozhnitsy-gilotiny
-        - name: Станки листогибочные
+          img: pics/g1_512.jpg
+        -
+          name: 'Станки листогибочные'
           slug: stanki-listogibochnye
-        - name: Листогибочные прессы
+          img: pics/g1_509.jpg
+        -
+          name: 'Листогибочные прессы'
           slug: listogibochnye-pressy
-        - name: Желобонакатные станки
+          img: pics/g1_975.jpg
+        -
+          name: 'Желобонакатные станки'
           slug: zhelobonakatnye-stanki
-        - name: Станки вальцовочные
+          img: pics/g1_942.jpeg
+        -
+          name: 'Станки вальцовочные'
           slug: stanki-valtsovochnye
-        - name: Резьбонарезное оборудование
+          img: pics/g1_877.jpg
+        -
+          name: 'Резьбонарезное оборудование'
           slug: rezbonareznoe-oborudovanie
-        - name: Резьбонарезные манипуляторы
+          img: pics/g1_904.jpg
+        -
+          name: 'Резьбонарезные манипуляторы'
           slug: rezbonareznye-manipulyatory
-        - name: Станки зиговочные
+          img: pics/g1_957.jpg
+        -
+          name: 'Станки зиговочные'
           slug: stanki-kromkogibochnye
-        - name: Станки фальцепрокатные
+          img: pics/g1_510.jpg
+        -
+          name: 'Станки фальцепрокатные'
           slug: stanki-faltseprokatnye
-        - name: Станки трубогибочные
+          img: pics/g1_928.jpg
+        -
+          name: 'Станки трубогибочные'
           slug: stanki-trubogibochnye
-        - name: Разматыватели металла
+          img: pics/g1_511.jpg
+        -
+          name: 'Разматыватели металла'
           slug: razmatyvateli-metalla
-        - name: Машины отрезные
+          img: pics/g1_914.jpg
+        -
+          name: 'Машины отрезные'
           slug: mashiny-otreznye
-        - name: Прессы
+          img: pics/g1_68.jpg
+        -
+          name: Прессы
           slug: pressy
-        - name: Cтанки для вырезания отверстий в трубах
+          img: pics/g1_357.jpg
+        -
+          name: 'Cтанки для вырезания отверстий в трубах'
           slug: ctanki-dlya-vyrezaniya-otverstiy-v-trubah
-        - name: Станки прецизионные по металлу
+          img: pics/g1_915.jpg
+        -
+          name: 'Станки прецизионные по металлу'
           slug: stanki-pretsizionnye-po-metallu
-        - name: Станки шинообрабатывающие
+          img: pics/g1_514.jpg
+        -
+          name: 'Станки шинообрабатывающие'
           slug: stanki-shinoobrabatyvayuschie
-        - name: Шринкеры
+          img: pics/g1_939.jpg
+        -
+          name: Шринкеры
           slug: shrinkery
-        - name: Английское колесо
+          img: pics/g1_810.jpg
+        -
+          name: 'Английское колесо'
           slug: angliyskoe-koleso
-        - name: Молотки гладильные
+          img: pics/g1_869.jpg
+        -
+          name: 'Молотки гладильные'
           slug: molotki-gladilnye
-        - name: Кузнечное оборудование
+          img: pics/g1_870.jpg
+        -
+          name: 'Кузнечное оборудование'
           slug: kuznechnoe-oborudovanie
-    - name: Оборудование для работы с пластиком
+          img: pics/g1_740.jpg
+    -
+      name: 'Оборудование для работы с пластиком'
       slug: svarka-plastika
+      img: pics/g1_515.jpg
       children:
-        - name: Стыковая сварка пластиковых труб
+        -
+          name: 'Стыковая сварка пластиковых труб'
           slug: stykovaya-svarka-plastikovyh-trub
-        - name: Электромуфтовая сварка
+          img: pics/g1_898.jpg
+        -
+          name: 'Электромуфтовая сварка'
           slug: elektromuftovaya-svarka
-        - name: Ленточные пилы для ПНД труб
+          img: pics/g1_901.jpg
+        -
+          name: 'Ленточные пилы для ПНД труб'
           slug: lentochnye-pily-dlya-pnd-trub
-        - name: Ремонт пластика
+          img: pics/g1_903.jpg
+        -
+          name: 'Ремонт пластика'
           slug: remont-plastika
-        - name: Раструбная сварка
+          img: pics/g1_899.jpg
+        -
+          name: 'Раструбная сварка'
           slug: rastrubnaya-svarka
-        - name: Электротруборезы
+          img: pics/g1_902.jpg
+        -
+          name: Электротруборезы
           slug: elektrotruborezy-po-plastiku
-        - name: Ручные аксиальные прессы
+          img: pics/g1_905.jpg
+        -
+          name: 'Ручные аксиальные прессы'
           slug: ruchnye-aksialnye-pressy
-        - name: Ручная резка и снятие фаски
+          img: pics/g1_956.jpg
+        -
+          name: 'Ручная резка и снятие фаски'
           slug: ruchnaya-rezka-i-snyatie-faski
-    - name: Оборудование для сварки полимерных материалов
+          img: pics/g1_967.jpg
+    -
+      name: 'Оборудование для сварки полимерных материалов'
       slug: oborudovanie-dlya-svarki-polimernyh-materialov
+      img: pics/g1_978.jpg
       children:
-        - name: Сварочные автоматы горячего воздуха
+        -
+          name: 'Сварочные автоматы горячего воздуха'
           slug: svarochnye-avtomaty-goryachego-vozduha
-        - name: Сварочные экструдеры
+          img: pics/g1_979.jpg
+        -
+          name: 'Сварочные экструдеры'
           slug: svarochnye-ekstrudery
-        - name: Фены технические
+          img: pics/g1_900.jpg
+        -
+          name: 'Фены технические'
           slug: feny-tehnicheskie
-    - name: Станки сверлильные
+          img: pics/g1_40.jpg
+    -
+      name: 'Станки сверлильные'
       slug: stanki-sverlilnye
-    - name: Станки заточные для инструмента
+      img: pics/g1_28.jpg
+    -
+      name: 'Станки заточные для инструмента'
       slug: stanki-zatochnye-dlya-spets-instrumenta
-    - name: Станки заточные
+      img: pics/g1_375.jpg
+    -
+      name: 'Станки заточные'
       slug: stanki-zatochnye
-    - name: Станки шлифовальные
+      img: pics/g1_69.jpg
+    -
+      name: 'Станки шлифовальные'
       slug: stanki-shlifovalnye
-    - name: Машины плоскошлифовальные и строгальные
+      img: pics/g1_29.jpg
+    -
+      name: 'Машины плоскошлифовальные и строгальные'
       slug: mashiny-ploskoshlifovalnye
-    - name: Станки долбежно-сверлильные
+      img: pics/g1_872.jpg
+    -
+      name: 'Станки долбежно-сверлильные'
       slug: stanki-dolbezhno-sverlilnye
-    - name: Железнодорожный инструмент
+      img: pics/g1_518.jpg
+    -
+      name: 'Железнодорожный инструмент'
       slug: zheleznodorozhnyy-instrument
-    - name: Пескоструйное оборудование
+      img: pics/g1_739.jpg
+    -
+      name: 'Пескоструйное оборудование'
       slug: peskostruynoe-oborudovanie
-    - name: Обслуживание холодильной техники
+      img: pics/g1_959.jpg
+    -
+      name: 'Обслуживание холодильной техники'
       slug: obsluzhivanie-holodilnoy-tehniki
-    - name: Тиски
+      img: pics/g1_966.jpg
+    -
+      name: Тиски
       slug: tisky
-    - name: Столы
+      img: ''
+    -
+      name: Столы
       slug: stoly
-    - name: Делительные головки
+      img: pics/g1_804.jpg
+    -
+      name: 'Делительные головки'
       slug: delitelnye-golovki
-    - name: Столы магнитные
+      img: pics/g1_954.jpg
+    -
+      name: 'Столы магнитные'
       slug: stoly-magnitnye
-    - name: Столы опорные, роликовые опоры
+      img: pics/g1_803.jpg
+    -
+      name: 'Столы опорные, роликовые опоры'
       slug: stoly-opornye-rolikovye-opory
-    - name: Станки для разделки кабеля
+      img: pics/g1_537.jpg
+    -
+      name: 'Станки для разделки кабеля'
       slug: stanki-dlya-razdelki-kabelya
-    - name: Сборщик стружки
+      img: pics/g1_926.jpg
+    -
+      name: 'Сборщик стружки'
       slug: sborschik-struzhki
-    - name: Окрасочные аппараты
+      img: ''
+    -
+      name: 'Окрасочные аппараты'
       slug: okrasochnye-apparaty
-    - name: Ручной электроинструмент
+      img: pics/g1_972.jpg
+    -
+      name: 'Ручной электроинструмент'
       slug: ruchnoy-elektroinstrument
+      img: pics/g1_519.jpg
       children:
-        - name: Пилы циркулярные
+        -
+          name: 'Пилы циркулярные'
           slug: pily-tsirkulyarnye
-        - name: Угловые шлифовальные машины
+          img: pics/g1_33.jpg
+        -
+          name: 'Угловые шлифовальные машины'
           slug: uglovye-shlifovalnye-mashiny
-        - name: Гайковерты сетевые
+          img: pics/g1_32.jpg
+        -
+          name: 'Гайковерты сетевые'
           slug: gaykoverty-setevye
-        - name: Аккумуляторный инструмент
+          img: pics/g1_960.jpg
+        -
+          name: 'Аккумуляторный инструмент'
           slug: akkumulyatornyy-instrument
-        - name: Шуруповерты сетевые
+          img: pics/g1_15.jpg
+        -
+          name: 'Шуруповерты сетевые'
           slug: shurupoverty-setevye
-        - name: Дрели ударные
+          img: pics/g1_378.jpg
+        -
+          name: 'Дрели ударные'
           slug: dreli-udarnye
-        - name: Электролобзики
+          img: pics/g1_26.jpg
+        -
+          name: Электролобзики
           slug: elektrolobziki
-        - name: Электрорубанки
+          img: pics/g1_689.jpg
+        -
+          name: Электрорубанки
           slug: elektrorubanki
-        - name: Шлифовальные машины
+          img: pics/g1_35.jpg
+        -
+          name: 'Шлифовальные машины'
           slug: shlifovalnye-mashiny
-        - name: Фрезеры
+          img: pics/g1_39.jpg
+        -
+          name: Фрезеры
           slug: frezery
-        - name: Перфораторы
+          img: pics/g1_36.jpg
+        -
+          name: Перфораторы
           slug: perforatory
-        - name: Миксеры строительные
+          img: pics/g1_27.jpg
+        -
+          name: 'Миксеры строительные'
           slug: miksery-stroitelnye
-        - name: Пилы алмазные
+          img: pics/g1_372.jpg
+        -
+          name: 'Пилы алмазные'
           slug: pily-almaznye
-        - name: Ножницы по металлу
+          img: pics/g1_482.jpg
+        -
+          name: 'Ножницы по металлу'
           slug: nozhnitsy-po-metallu
-        - name: Прочий электро инструмент
+          img: pics/g1_41.jpg
+        -
+          name: 'Прочий электро инструмент'
           slug: prochiy-elektro-instrument
-    - name: Система охлаждения для станков
+          img: pics/g1_42.jpg
+    -
+      name: 'Система охлаждения для станков'
       slug: prochiy-instrument-i-oborudovanie
-    - name: Принадлежности к станкам и оборудованию
+      img: pics/g1_571.jpg
+    -
+      name: 'Принадлежности к станкам и оборудованию'
       slug: prinadlezhnosti-k-stankam-i-oborudovaniyu
+      img: pics/g1_791.jpg
       children:
-        - name: Кольцевые фрезы по металлу
+        -
+          name: 'Кольцевые фрезы по металлу'
           slug: koltsevye-frezy-po-metallu
-        - name: Спиральные сверла с соединением Weldon
+          img: pics/g1_764.jpg
+        -
+          name: 'Спиральные сверла с соединением Weldon'
           slug: spiralnye-sverla-s-soedineniem-weldon
-        - name: Центровочные штифты
+          img: pics/g1_805.jpg
+        -
+          name: 'Центровочные штифты'
           slug: tsentrovochnye-shtifty
-        - name: Комплектующие к магнитным станкам
+          img: pics/g1_818.jpg
+        -
+          name: 'Комплектующие к магнитным станкам'
           slug: komplektuyuschie-k-magnitnym-stankam
-        - name: Дополнительное оборудование к станкам распиловочным
+          img: pics/g1_770.jpg
+        -
+          name: 'Дополнительное оборудование к станкам распиловочным'
           slug: dopolnitelnoe-oborudovanie-k-stankam-mnogooperatsionnym-derevoobrabatyvayuschim
-        - name: Комплектующие к станкам токарным по дереву
+          img: pics/g1_564.jpg
+        -
+          name: 'Комплектующие к станкам токарным по дереву'
           slug: komplektuyuschie-k-stankam-tokarnym-po-derevu
-        - name: Комплектующие к ленточнопильнам станкам по дереву
+          img: pics/g1_687.jpg
+        -
+          name: 'Комплектующие к ленточнопильнам станкам по дереву'
           slug: komplektuyuschie-lentochnopilnam-stankam-po-derevu
-        - name: Комплектующие к станкам заточным для спец. инструмента
+          img: pics/g1_835.jpg
+        -
+          name: 'Комплектующие к станкам заточным для спец. инструмента'
           slug: komplektuyuschie-k-stankam-zatochnym-dlya-spets-instrumenta
-        - name: Комплектующие к станкам листогибочным
+          img: pics/g1_563.jpg
+        -
+          name: 'Комплектующие к станкам листогибочным'
           slug: komplektuyuschie-k-stankam-listogibochnym
-        - name: Комплектующие к станкам шлифовальным
+          img: pics/g1_763.jpg
+        -
+          name: 'Комплектующие к станкам шлифовальным'
           slug: komplektuyuschie-k-stankam-shlifovalnym
-        - name: Комплектующие к станкам токарным по металлу
+          img: pics/g1_808.jpg
+        -
+          name: 'Комплектующие к станкам токарным по металлу'
           slug: komplektuyuschie-k-stankam-tokarnym-po-metallu
-        - name: Цанговые патроны с набором цанг
+          img: pics/g1_569.jpg
+        -
+          name: 'Цанговые патроны с набором цанг'
           slug: tsangovye-patrony-s-naborom-tsang
-        - name: Комплектующие к станкам фрезерным по металлу
+          img: pics/g1_955.jpg
+        -
+          name: 'Комплектующие к станкам фрезерным по металлу'
           slug: komplektuyuschie-k-stankam-frezernym-po-metallu
-        - name: Комплектующие к кромкорезным станкам
+          img: pics/g1_688.jpg
+        -
+          name: 'Комплектующие к кромкорезным станкам'
           slug: komplektuyuschie-k-kromkoreznym-stankam
-        - name: Комплектующие к станкам фуговальным и рейсмусовым
+          img: pics/iucatal1004024.jpg
+        -
+          name: 'Комплектующие к станкам фуговальным и рейсмусовым'
           slug: spiralnye-valy-helical
-        - name: Ножи к деревообрабатывающим станкам
+          img: pics/g1_829.jpg
+        -
+          name: 'Ножи к деревообрабатывающим станкам'
           slug: nozhi-k-derevoobrabatyvayuschim-stankam
-        - name: Головки расточные
+          img: pics/g1_833.jpg
+        -
+          name: 'Головки расточные'
           slug: golovki-rastochnye
-        - name: Борфрезы
+          img: pics/g1_951.jpg
+        -
+          name: Борфрезы
           slug: borfrezy
-        - name: Звездочки для бучардирования
+          img: pics/g1_765.jpg
+        -
+          name: 'Звездочки для бучардирования'
           slug: zvezdochki-dlya-buchardirovaniya
-        - name: Диски для труборезов
+          img: pics/g1_822.jpg
+        -
+          name: 'Диски для труборезов'
           slug: diski-dlya-elektrotruborezov-paypkat
-        - name: Ролики для трубогибов
+          img: pics/g1_874.jpg
+        -
+          name: 'Ролики для трубогибов'
           slug: roliki-dlya-trubogibov
-        - name: Круги лепестковые
+          img: pics/g1_824.jpg
+        -
+          name: 'Круги лепестковые'
           slug: krugi-lepestkovye
-        - name: Фрезы по дереву
+          img: pics/g1_604.jpg
+        -
+          name: 'Фрезы по дереву'
           slug: frezy-po-derevu
-        - name: Профильные фрезы по камню
+          img: pics/g1_599.jpg
+        -
+          name: 'Профильные фрезы по камню'
           slug: profilnye-frezy-po-kamnyu
-        - name: Токарные резцы
+          img: pics/g1_823.jpg
+        -
+          name: 'Токарные резцы'
           slug: tokarnye-reztsy
-        - name: Комплектующие к станкам сверлильным
+          img: pics/g1_601.jpg
+        -
+          name: 'Комплектующие к станкам сверлильным'
           slug: komplektuyuschie-k-stankam-sverlilnym
-        - name: Ленты пильные
+          img: pics/g1_798.jpg
+        -
+          name: 'Ленты пильные'
           slug: lenty-pilnye
-        - name: Диски пильные
+          img: pics/g1_612.jpg
+        -
+          name: 'Диски пильные'
           slug: diski-pilnye
-        - name: Щетки для инструмента
+          img: pics/g1_616.jpg
+        -
+          name: 'Щетки для инструмента'
           slug: schetki-dlya-ushm
-        - name: Смазочно-охлаждающая жидкость
+          img: pics/g1_606.jpg
+        -
+          name: 'Смазочно-охлаждающая жидкость'
           slug: smazochno-ohlazhdayuschaya-zhidkost
-
-- name: Строительное оборудование
+          img: pics/g1_838.jpg
+-
+  name: 'Строительное оборудование'
   slug: stroitelnoe-oborudovanie
+  img: pics/iuleft000013.jpg
   children:
-    - name: Станки для резки камня и плитки
+    -
+      name: 'Станки для резки камня и плитки'
       slug: stanki-dlya-raboty-po-kamnyu-plitkorezy
+      img: pics/g1_30.jpg
       children:
-        - name: Ручные станки для резки плитки
+        -
+          name: 'Ручные станки для резки плитки'
           slug: ruchnye-stanki-dlya-rezki-plitki
-        - name: Плиткорезы электрические
+          img: pics/g1_825.jpg
+        -
+          name: 'Плиткорезы электрические'
           slug: plitkorezy-elektricheskie
-        - name: Камнерезные станки
+          img: pics/g1_826.jpg
+        -
+          name: 'Камнерезные станки'
           slug: kamnereznye-stanki
-    - name: Сверлильные машины для бетона
+          img: pics/g1_827.jpg
+    -
+      name: 'Сверлильные машины для бетона'
       slug: sverlilnye-mashiny-dlya-betona
+      img: pics/g1_516.jpg
       children:
-        - name: Установка для алмазного бурения
+        -
+          name: 'Установка для алмазного бурения'
           slug: ustanovka-dlya-almaznogo-bureniya
-        - name: Моторы алмазного бурения
+          img: pics/g1_650.jpg
+        -
+          name: 'Моторы алмазного бурения'
           slug: motory-almaznogo-burilniya
-        - name: Стойка (штатив) для алмазного бурения
+          img: pics/g1_648.jpg
+        -
+          name: 'Стойка (штатив) для алмазного бурения'
           slug: stoyka-shtativ-dlya-almaznogo-bureniya
-        - name: Дополнительное оборудование
+          img: pics/g1_649.jpg
+        -
+          name: 'Дополнительное оборудование'
           slug: dopolnitelnoe-oborudovanie
-        - name: Коронки для бурения
+          img: pics/g1_517.jpg
+        -
+          name: 'Коронки для бурения'
           slug: koronki-dlya-bureniya
-        - name: Удлинители для коронок
+          img: pics/g1_907.jpg
+        -
+          name: 'Удлинители для коронок'
           slug: udliniteli-koronok
-    - name: Швонарезчики
+          img: pics/g1_908.jpg
+    -
+      name: Швонарезчики
       slug: benzorezy-i-shvonarezchiki
-    - name: Ручной электроинструмент для камнеобработки
+      img: pics/g1_565.jpg
+    -
+      name: 'Ручной электроинструмент для камнеобработки'
       slug: ruchnoy-instrument-dlya-kamneobrabotki
-    - name: Бензорезы
+      img: pics/g1_821.jpg
+    -
+      name: Бензорезы
       slug: benzorezy
-    - name: Виброплиты
+      img: pics/g1_929.jpg
+    -
+      name: Виброплиты
       slug: vibroplity
-    - name: Вибротрамбовки
+      img: pics/g1_633.jpg
+    -
+      name: Вибротрамбовки
       slug: vibrotrambovki
-    - name: Катки вибрационные
+      img: pics/g1_634.jpg
+    -
+      name: 'Катки вибрационные'
       slug: katki-vibratsionnye
-    - name: Машины шлифовальные
+      img: pics/g1_643.jpg
+    -
+      name: 'Машины шлифовальные'
       slug: mashiny-shlifovalnye
-    - name: Затирочные машины
+      img: pics/g1_617.jpg
+    -
+      name: 'Затирочные машины'
       slug: zatirochnye-mashiny
-    - name: Виброрейки
+      img: pics/g1_636.jpg
+    -
+      name: Виброрейки
       slug: vibroreyki
-    - name: Раздельщики трещин
+      img: pics/g1_638.jpg
+    -
+      name: 'Раздельщики трещин'
       slug: razdelschiki-treschin
-    - name: Резчики кровли
+      img: pics/g1_647.jpg
+    -
+      name: 'Резчики кровли'
       slug: rezchiki-krovli
-    - name: Станки для гибки и резки арматуры
+      img: pics/g1_645.jpg
+    -
+      name: 'Станки для гибки и резки арматуры'
       slug: stanki-dlya-armatury
-    - name: Фрезеровальные машины
+      img: pics/g1_652.jpg
+    -
+      name: 'Фрезеровальные машины'
       slug: frezerovalnye-mashiny
-    - name: Коперы
+      img: pics/g1_641.jpg
+    -
+      name: Коперы
       slug: kopery
-    - name: Вальцы для прикатки
+      img: pics/g1_925.jpg
+    -
+      name: 'Вальцы для прикатки'
       slug: valtsy-dlya-prikatki
-    - name: Молотки отбойные
+      img: pics/g1_906.jpg
+    -
+      name: 'Молотки отбойные'
       slug: molotki-otboynye
-    - name: Тачки строительные
+      img: pics/g1_59.jpg
+    -
+      name: 'Тачки строительные'
       slug: tachki-stroitelnye
-    - name: Стенорезные машины
+      img: pics/g1_329.jpg
+    -
+      name: 'Стенорезные машины'
       slug: stenoreznye-mashiny
-    - name: Аппараты окрасочные
+      img: pics/g1_841.jpg
+    -
+      name: 'Аппараты окрасочные'
       slug: apparaty-okrasochnye
-    - name: Растворосмесители
+      img: pics/g1_1045.png
+    -
+      name: Растворосмесители
       slug: betonosmesiteli
-    - name: Растворонасосы, машины штукатурные
+      img: pics/g1_47.jpg
+    -
+      name: 'Растворонасосы, машины штукатурные'
       slug: rastvoronasosy
-    - name: Глубинные вибраторы
+      img: pics/g1_930.jpg
+    -
+      name: 'Глубинные вибраторы'
       slug: glubinnye-vibratory
-    - name: Штроборезы
+      img: pics/g1_635.jpg
+    -
+      name: Штроборезы
       slug: shtroborezy
-    - name: Блокорезы
+      img: pics/g1_350.jpg
+    -
+      name: Блокорезы
       slug: blokorezy
-    - name: Пистолеты для вязки арматуры
+      img: pics/g1_911.jpg
+    -
+      name: 'Пистолеты для вязки арматуры'
       slug: pistolety-dlya-vyazki-armatury
-    - name: Мини экскаваторы
+      img: pics/g1_637.jpg
+    -
+      name: 'Мини экскаваторы'
       slug: mini-ekskavatory
-    - name: Комплектующие к строительному оборудованию
+      img: pics/g1_840.jpg
+    -
+      name: 'Комплектующие к строительному оборудованию'
       slug: komplektuyuschie-k-stroitelnomu-oborudovaniyu
+      img: pics/g1_790.jpg
       children:
-        - name: Комплектующие к виброплитам
+        -
+          name: 'Комплектующие к виброплитам'
           slug: komplektuyuschie-k-vibroplitam
-        - name: Комплектующие к глубинным вибраторам
+          img: pics/g1_776.jpg
+        -
+          name: 'Комплектующие к глубинным вибраторам'
           slug: komplektuyuschie-k-glubinnym-vibratoram
-        - name: Комплектующие к виброрейкам
+          img: pics/g1_777.jpg
+        -
+          name: 'Комплектующие к виброрейкам'
           slug: komplektuyuschie-k-vibroreykam
-        - name: Комплектующие к пистолетом для вязки арматуры
+          img: pics/g1_778.jpg
+        -
+          name: 'Комплектующие к пистолетом для вязки арматуры'
           slug: komplektuyuschie-k-pistoletom-dlya-vyazki-armatury
-        - name: Комплектующие к затирочным машинам
+          img: pics/g1_640.jpg
+        -
+          name: 'Комплектующие к затирочным машинам'
           slug: komplektuyuschie-k-zatirochnym-mashinam
-        - name: Комплектующие к фрезеровальным машинам
+          img: pics/g1_639.jpg
+        -
+          name: 'Комплектующие к фрезеровальным машинам'
           slug: komplektuyuschie-k-frezerovalnym-mashinam
-        - name: Комплектующие к станкам для работы с арматурой
+          img: pics/g1_642.jpg
+        -
+          name: 'Комплектующие к станкам для работы с арматурой'
           slug: komplektuyuschie-k-stankam-dlya-raboty-s-armaturoy
-        - name: Комплектующие к шлифовальным машинам
+          img: pics/g1_653.jpg
+        -
+          name: 'Комплектующие к шлифовальным машинам'
           slug: komplektuyuschie-k-shlifovalnym-mashinam
-        - name: Кровельные фрезы
+          img: pics/g1_927.jpg
+        -
+          name: 'Кровельные фрезы'
           slug: krovelnye-frezy
-        - name: Алмазные шлифовальные чашки
+          img: pics/g1_646.jpg
+        -
+          name: 'Алмазные шлифовальные чашки'
           slug: almaznye-shlifovalnye-chashki
-        - name: Алмазные коронки для бурения
+          img: pics/g1_629.jpg
+        -
+          name: 'Алмазные коронки для бурения'
           slug: almaznye-koronki-dlya-bureniya
-        - name: Круги абразивные
+          img: pics/g1_627.jpg
+        -
+          name: 'Круги абразивные'
           slug: krugi-abrazivnye
-        - name: Круги алмазные
+          img: pics/g1_605.jpg
+        -
+          name: 'Круги алмазные'
           slug: krugi-almaznye
-        - name: Зубило и пики
+          img: pics/g1_603.jpg
+        -
+          name: 'Зубило и пики'
           slug: zubilo-i-piki
-
-- name: Клининговое оборудование
+          img: pics/g1_602.jpg
+-
+  name: 'Клининговое оборудование'
   slug: kliningovoe-oborudovanie
+  img: pics/iuleft000016.jpg
   children:
-    - name: Машины поломоечные
+    -
+      name: 'Машины поломоечные'
       slug: mashiny-polomoechnye
-    - name: Снегоуборочная техника
+      img: pics/g1_963.jpg
+    -
+      name: 'Снегоуборочная техника'
       slug: snegouborochnaya-tehnika
-    - name: Подметальные машины
+      img: pics/g1_328.jpg
+    -
+      name: 'Подметальные машины'
       slug: podmetalnye-mashiny
-    - name: Полотеры
+      img: pics/g1_568.jpg
+    -
+      name: Полотеры
       slug: polotery
-    - name: Прочистные машины
+      img: pics/g1_1034.jpg
+    -
+      name: 'Прочистные машины'
       slug: prochistnye-mashiny
-    - name: Мойки высокого давления
+      img: pics/g1_820.jpg
+    -
+      name: 'Мойки высокого давления'
       slug: moyki-vysokogo-davleniya
-    - name: Оборудование для промывки теплообменников и систем отопления
+      img: pics/g1_23.jpg
+    -
+      name: 'Оборудование для промывки теплообменников и систем отопления'
       slug: nasos-dlya-promyvki
-
-- name: Электростанции и генераторы
+      img: pics/g1_910.jpg
+-
+  name: 'Электростанции и генераторы'
   slug: elektrostantsii-i-generator
+  img: pics/iuleft000001.jpg
   children:
-    - name: Электростанции
+    -
+      name: Электростанции
       slug: elektrostantsii
-    - name: Электро-генераторы инверторные
+      img: pics/g1_590.jpg
+    -
+      name: 'Электро-генераторы инверторные'
       slug: elektro-generatory-invertornye
-    - name: Электро-генераторы бензиновые
+      img: pics/g1_589.jpg
+    -
+      name: 'Электро-генераторы бензиновые'
       slug: elektro-generatory-benzinovye
-    - name: Электро-генераторы дизельные
+      img: pics/g1_488.jpg
+    -
+      name: 'Электро-генераторы дизельные'
       slug: elektro-generatory-dizelnye
-    - name: Электро-генераторы с функцией сварки
+      img: pics/g1_489.jpg
+    -
+      name: 'Электро-генераторы с функцией сварки'
       slug: elektro-generatory-s-funktsiey-svarki
-    - name: Электро-генератор газ/бензин
+      img: pics/g1_561.jpg
+    -
+      name: 'Электро-генератор газ/бензин'
       slug: elektro-generator-gazbenzin
-    - name: Электро-генераторы с системой АВР
+      img: pics/g1_535.jpg
+    -
+      name: 'Электро-генераторы с системой АВР'
       slug: elektro-generatory-s-blokom-avtozapuska
+      img: pics/g1_592.jpg
       children:
-        - name: Бензиновые генераторы с системой АВР
+        -
+          name: 'Бензиновые генераторы с системой АВР'
           slug: benzinovye-generatory-s-sistemoy-avr
-        - name: Дизельные генераторы с системой АВР
+          img: pics/g1_923.jpg
+        -
+          name: 'Дизельные генераторы с системой АВР'
           slug: dizelnye-generatory-s-sistemoy-avr
-    - name: Блок автоматики для генератора
+          img: pics/g1_924.jpg
+    -
+      name: 'Блок автоматики для генератора'
       slug: blok-avtomatiki-dlya-generatora
-    - name: Комплектующие к генераторам
+      img: pics/g1_490.jpg
+    -
+      name: 'Комплектующие к генераторам'
       slug: komplektuyuschie-k-generatoram
-
-- name: Садовая техника
+      img: pics/g1_491.jpg
+-
+  name: 'Садовая техника'
   slug: sadovaya-tehnika
+  img: pics/iuleft000017.jpg
   children:
-    - name: Культиваторы и мотоблоки
+    -
+      name: 'Культиваторы и мотоблоки'
       slug: kultivatory-i-motobloki
-    - name: Пилы цепные бензиновые
+      img: pics/g1_330.jpg
+    -
+      name: 'Пилы цепные бензиновые'
       slug: pily-tsepnye-benzinovye
-    - name: Газонокосилки
+      img: pics/g1_38.jpg
+    -
+      name: Газонокосилки
       slug: gazonokosilki
-    - name: Мотобуры и мотодрели
+      img: pics/g1_468.jpg
+    -
+      name: 'Мотобуры и мотодрели'
       slug: motobury-i-motodreli
-    - name: Дровоколы
+      img: pics/g1_347.jpg
+    -
+      name: Дровоколы
       slug: drovokoly
-    - name: Трактора садовые
+      img: pics/g1_585.jpg
+    -
+      name: 'Трактора садовые'
       slug: traktora-sadovye
-    - name: Шредеры (садовые измельчители)
+      img: pics/g1_581.jpg
+    -
+      name: 'Шредеры (садовые измельчители)'
       slug: shredery-sadovye-izmelchiteli
-    - name: Пылесосы садовые
+      img: pics/g1_587.jpg
+    -
+      name: 'Пылесосы садовые'
       slug: pylesosy-sadovye
-    - name: Триммеры
+      img: pics/g1_586.jpg
+    -
+      name: Триммеры
       slug: trimmery
-    - name: Аэраторы
+      img: pics/g1_506.jpg
+    -
+      name: Аэраторы
       slug: aeratory
-    - name: Опрыскиватели
+      img: pics/g1_588.jpg
+    -
+      name: Опрыскиватели
       slug: opryskivateli
-    - name: Воздуходув-пылесос
+      img: pics/g1_584.jpg
+    -
+      name: Воздуходув-пылесос
       slug: vozduhoduv-pylesos
-    - name: Садовые пруды
+      img: pics/g1_583.jpg
+    -
+      name: 'Садовые пруды'
       slug: sadovye-prudy
-    - name: Пилы цепные электрические
+      img: pics/g1_374.jpg
+    -
+      name: 'Пилы цепные электрические'
       slug: pily-tsepnye-elektricheskie
-    - name: Кусторезы и бензоножницы
+      img: pics/g1_37.jpg
+    -
+      name: 'Кусторезы и бензоножницы'
       slug: kustorezy-i-benzonozhnitsy
-    - name: Транспортеры
+      img: pics/g1_476.jpg
+    -
+      name: Транспортеры
       slug: transportery
-    - name: Навесное и комплектующие к садовой техники
+      img: pics/g1_785.jpg
+    -
+      name: 'Навесное и комплектующие к садовой техники'
       slug: navesnoe-i-komplektuyuschie-k-sadovoy-tehniki
+      img: pics/g1_789.jpg
       children:
-        - name: Комплектующие к культиваторам и мотоблокам
+        -
+          name: 'Комплектующие к культиваторам и мотоблокам'
           slug: c1_0562
-        - name: Комплектующие к подметальным машинам
+          img: pics/iucatal1002672.jpg
+        -
+          name: 'Комплектующие к подметальным машинам'
           slug: c1_0772
-        - name: Комплектующие к газонокосилкам
+          img: pics/g1_772.jpg
+        -
+          name: 'Комплектующие к газонокосилкам'
           slug: c1_0651
-        - name: Комплектующие к тракторам
+          img: pics/g1_651.jpg
+        -
+          name: 'Комплектующие к тракторам'
           slug: c1_0582
-        - name: Комплектующие к мотобурам
+          img: pics/g1_582.jpg
+        -
+          name: 'Комплектующие к мотобурам'
           slug: c1_0348
-
-- name: Промышленные пылесосы
+          img: pics/g1_348.jpg
+-
+  name: 'Промышленные пылесосы'
   slug: promyshlennye-pylesosy
+  img: pics/iuleft000020.jpg
   children:
-    - name: Аспирация
+    -
+      name: Аспирация
       slug: struzhkootsosy
-    - name: Фильтро-вентиляционные системы
+      img: pics/g1_793.jpg
+    -
+      name: 'Фильтро-вентиляционные системы'
       slug: filtro-ventilyatsionnye-sistemy
-    - name: Пылесосы
+      img: pics/g1_980.png
+    -
+      name: Пылесосы
       slug: pylesosy
-    - name: Комплектующие к пылесосам
+      img: pics/g1_792.jpg
+    -
+      name: 'Комплектующие к пылесосам'
       slug: komplektuyuschie-k-pylesosam
-
-- name: Стабилизаторы, ИБП, аккумуляторы
+      img: pics/g1_75.jpg
+-
+  name: 'Стабилизаторы, ИБП, аккумуляторы'
   slug: stabilizatory
+  img: pics/iuleft000002.jpg
   children:
-    - name: Стабилизаторы электромеханические
+    -
+      name: 'Стабилизаторы электромеханические'
       slug: stabilizatory-elektromehanicheskie
-    - name: Стабилизаторы электронные
+      img: pics/g1_474.jpg
+    -
+      name: 'Стабилизаторы электронные'
       slug: stabilizatory-elektronnye
-    - name: Стабилизаторы трехфазные
+      img: pics/g1_470.jpg
+    -
+      name: 'Стабилизаторы трехфазные'
       slug: stabilizatory-trehfaznye
-    - name: Стабилизаторы пониженного напряжения
+      img: pics/g1_475.jpg
+    -
+      name: 'Стабилизаторы пониженного напряжения'
       slug: stabilizatory-ponizhennogo-napryazheniya
-    - name: Стабилизаторы серии-С (Сетевые фильтры)
+      img: pics/g1_472.jpg
+    -
+      name: 'Стабилизаторы серии-С (Сетевые фильтры)'
       slug: stabilizatory-serii-s-setevye-filtry
-    - name: Блок реле контроля фаз
+      img: pics/g1_473.jpg
+    -
+      name: 'Блок реле контроля фаз'
       slug: blok-rele-kontrolya-faz
-    - name: Щитовое оборудование
+      img: pics/g1_718.jpg
+    -
+      name: 'Щитовое оборудование'
       slug: schitovoe-oborudovanie
-    - name: Фильтры сетевые, заземления
+      img: pics/g1_1020.png
+    -
+      name: 'Фильтры сетевые, заземления'
       slug: setevye-filtry
-    - name: Инвертор (преобразователь постоянного тока)
+      img: pics/g1_720.jpg
+    -
+      name: 'Инвертор (преобразователь постоянного тока)'
       slug: invertor-preobrazovatel-postoyannogo-toka
-    - name: ИБП (готовое решение)
+      img: pics/g1_945.jpg
+    -
+      name: 'ИБП (готовое решение)'
       slug: ibp-gotovoe-reshenie
-    - name: ИБП (инвертор)
+      img: pics/g1_577.jpg
+    -
+      name: 'ИБП (инвертор)'
       slug: invertory
-    - name: Аккумуляторы
+      img: pics/g1_578.jpg
+    -
+      name: Аккумуляторы
       slug: akkumulyatory-dlya-ibp
-    - name: Стеллаж-стойки
+      img: pics/g1_579.jpg
+    -
+      name: Стеллаж-стойки
       slug: stellazh-stoyki
-    - name: Автотрансформаторы
+      img: pics/g1_580.jpg
+    -
+      name: Автотрансформаторы
       slug: avtotransformatory
-
-- name: Тепловое оборудование
+      img: pics/g1_467.jpg
+-
+  name: 'Тепловое оборудование'
   slug: teplovoe-oborudovanie
+  img: pics/iuleft000014.jpg
   children:
-    - name: Электрические тепловые пушки
+    -
+      name: 'Электрические тепловые пушки'
       slug: elektricheskie-teplovye-pushki
-    - name: Газовые тепловые пушки
+      img: pics/g1_484.jpg
+    -
+      name: 'Газовые тепловые пушки'
       slug: gazovye-teplovye-pushki
-    - name: Дизельные тепловые пушки
+      img: pics/g1_485.jpg
+    -
+      name: 'Дизельные тепловые пушки'
       slug: dizelnye-teplovye-pushki
-    - name: Дизельные тепловые пушки непрямого нагрева
+      img: pics/g1_486.jpg
+    -
+      name: 'Дизельные тепловые пушки непрямого нагрева'
       slug: dizelnye-teplovye-pushki-nepryamogo-nagreva
-    - name: Инфракрасные тепловые пушки
+      img: pics/g1_721.jpg
+    -
+      name: 'Инфракрасные тепловые пушки'
       slug: infrakrasnye-teplovye-pushki
-    - name: Печи на отработанном масле
+      img: pics/g1_722.jpg
+    -
+      name: 'Печи на отработанном масле'
       slug: pechi-na-otrabotannom-masle
-
-- name: Насосное оборудование
+      img: pics/g1_723.jpg
+-
+  name: 'Насосное оборудование'
   slug: nasosnoe-oborudovanie
+  img: pics/iuleft000015.jpg
   children:
-    - name: Мотопомпы бензиновые
+    -
+      name: 'Мотопомпы бензиновые'
       slug: motopompy-benzinovye
-    - name: Мотопомпы дизельные
+      img: pics/g1_21.jpg
+    -
+      name: 'Мотопомпы дизельные'
       slug: motopompy-dizelnye
-    - name: Рукава для мотопомп
+      img: pics/g1_567.jpg
+    -
+      name: 'Рукава для мотопомп'
       slug: rukava-dlya-motopomp
-    - name: Опрессовочные насосы
+      img: pics/g1_781.jpg
+    -
+      name: 'Опрессовочные насосы'
       slug: opressovschiki
-    - name: Насосы скважинные
+      img: pics/g1_909.jpg
+    -
+      name: 'Насосы скважинные'
       slug: nasosy-skvazhinnye
-    - name: Насосные станции
+      img: pics/g1_331.jpg
+    -
+      name: 'Насосные станции'
       slug: nasosnye-stantsii
-    - name: Насосы для перекачки спец. жидкостей
+      img: pics/g1_549.jpg
+    -
+      name: 'Насосы для перекачки спец. жидкостей'
       slug: nasosy-dlya-perekachki-spets-zhidkostey
-    - name: Насосы поверхностные
+      img: pics/g1_538.jpg
+    -
+      name: 'Насосы поверхностные'
       slug: nasosy-poverhnostnye
-    - name: Насосы погружные дренажные
+      img: pics/g1_552.jpg
+    -
+      name: 'Насосы погружные дренажные'
       slug: nasosy-pogruzhnye-drenazhnye
-
-- name: Двигатели
+      img: pics/g1_550.jpg
+-
+  name: Двигатели
   slug: dvigatel
+  img: pics/iuleft000005.jpg
   children:
-    - name: Двигатели бензиновые с вертикальным валом
+    -
+      name: 'Двигатели бензиновые с вертикальным валом'
       slug: dvigateli-benzinovye-s-vertikalnym-valom
-    - name: Двигатели бензиновые
+      img: pics/g1_865.jpg
+    -
+      name: 'Двигатели бензиновые'
       slug: dvigateli-benzinovye
-    - name: Двигатели бензиновые с редуктором
+      img: pics/g1_767.jpg
+    -
+      name: 'Двигатели бензиновые с редуктором'
       slug: dvigateli-benzinovye-s-reduktorom
-    - name: Двигатели бензиновые двухцилиндровые
+      img: pics/g1_867.jpg
+    -
+      name: 'Двигатели бензиновые двухцилиндровые'
       slug: dvigateli-benzinovye-dvuhtsilindrovye
-    - name: Двигатели дизельные
+      img: pics/g1_866.jpg
+    -
+      name: 'Двигатели дизельные'
       slug: dvigateli-dizelnye
-    - name: Электрические двигатели
+      img: pics/g1_774.jpg
+    -
+      name: 'Электрические двигатели'
       slug: elektricheskie-dvigateli
-
-- name: Все для АВТО транспорта и ремонта
+      img: pics/g1_768.jpg
+-
+  name: 'Все для АВТО транспорта и ремонта'
   slug: vse-dlya-avto-transporta-i-remonta
+  img: pics/iuleft000039.jpg
   children:
-    - name: Зарядные, пуско-зарядные устройства
+    -
+      name: 'Зарядные, пуско-зарядные устройства'
       slug: zaryadnye-pusko-zaryadnye-ustroystva
-    - name: Авто-мото лебедки
+      img: pics/g1_349.jpg
+    -
+      name: 'Авто-мото лебедки'
       slug: avto-moto-lebedki
-    - name: Инфракрасные сушки
+      img: pics/g1_78.jpg
+    -
+      name: 'Инфракрасные сушки'
       slug: infrakrasnye-sushki
-    - name: Стойки трансмиссионные
+      img: pics/g1_554.jpg
+    -
+      name: 'Стойки трансмиссионные'
       slug: stoyki-transmissionnye
-    - name: Подъемники автомобильные
+      img: pics/g1_353.jpg
+    -
+      name: 'Подъемники автомобильные'
       slug: podemniki-avtomobilnye
-    - name: Опрокидыватели
+      img: pics/g1_597.jpg
+    -
+      name: Опрокидыватели
       slug: oprokidyvateli
-    - name: Установки проточки тормозных дисков
+      img: pics/g1_133.jpg
+    -
+      name: 'Установки проточки тормозных дисков'
       slug: ustanovki-protochki-tormoznyh-diskov
-    - name: Краны гидравлический
+      img: pics/g1_977.jpg
+    -
+      name: 'Краны гидравлический'
       slug: krany-gidravlicheskiy
-    - name: Стенды для двигателя
+      img: pics/g1_354.jpg
+    -
+      name: 'Стенды для двигателя'
       slug: stendy-dlya-dvigatelya
-    - name: Маслосменное оборудование
+      img: pics/g1_355.jpg
+    -
+      name: 'Маслосменное оборудование'
       slug: maslosmennoe-oborudovanie
-    - name: Катушки для удаления газов
+      img: pics/g1_556.jpg
+    -
+      name: 'Катушки для удаления газов'
       slug: katushki-dlya-udaleniya-gazov
-    - name: Обслуживание автокондиционеров
+      img: pics/g1_1018.jpg
+    -
+      name: 'Обслуживание автокондиционеров'
       slug: obsluzhivanie-avtokonditsionerov
-    - name: Гидравлическое оборудование
+      img: pics/p1_18158.jpg
+    -
+      name: 'Гидравлическое оборудование'
       slug: gidvavlicheskoe-oborudovanie
-    - name: Лежаки ремонтные
+      img: pics/g1_77.jpg
+    -
+      name: 'Лежаки ремонтные'
       slug: lezhaki-remontnye
-    - name: Стапеля
+      img: pics/g1_358.jpg
+    -
+      name: Стапеля
       slug: stapelya
-    - name: Оборудование для шиномонтажа
+      img: pics/g1_356.jpg
+    -
+      name: 'Оборудование для шиномонтажа'
       slug: oborudovanie-dlya-shinomontazha
-    - name: Наборы инструмента и ключей
+      img: pics/g1_557.jpg
+    -
+      name: 'Наборы инструмента и ключей'
       slug: nabory-instrumenta-i-klyuchey
-
-- name: Складское оборудование
+      img: pics/g1_65.jpg
+-
+  name: 'Складское оборудование'
   slug: skladskoe
+  img: pics/iuleft000003.jpg
   children:
-    - name: Тележки гидравлические
+    -
+      name: 'Тележки гидравлические'
       slug: telezhki-gidravlicheskie
-    - name: Тележки самоходные
+      img: pics/g1_729.jpg
+    -
+      name: 'Тележки самоходные'
       slug: telezhki-samohodnye
-    - name: Подъемные столы и платформы
+      img: pics/g1_730.jpg
+    -
+      name: 'Подъемные столы и платформы'
       slug: podemnye-stoly-i-platformy
-    - name: Бочкокатнователи
+      img: pics/g1_817.png
+    -
+      name: Бочкокатнователи
       slug: bochkokatnovateli
-    - name: Весы
+      img: pics/g1_726.jpg
+    -
+      name: Весы
       slug: vesy
-    - name: Штабелеры гидравлические
+      img: pics/g1_862.jpg
+    -
+      name: 'Штабелеры гидравлические'
       slug: shtabelery-gidravlicheskie
-    - name: Комплектовщики заказов
+      img: pics/g1_731.jpg
+    -
+      name: 'Комплектовщики заказов'
       slug: komplektovschiki-zakazov
-    - name: Ричтраки и погрузчики
+      img: pics/g1_727.jpg
+    -
+      name: 'Ричтраки и погрузчики'
       slug: richtraki
-
-- name: Грузоподъемное оборудование
+      img: pics/g1_728.jpg
+-
+  name: 'Грузоподъемное оборудование'
   slug: gruzopodemnoe-oborudovanie
+  img: pics/iuleft000050.jpg
   children:
-    - name: Грузовые гидравлические домкраты
+    -
+      name: 'Грузовые гидравлические домкраты'
       slug: gruzovye-domkraty
-    - name: Люльки строительные (фасадные подъемники)
+      img: pics/g1_1042.jpg
+    -
+      name: 'Люльки строительные (фасадные подъемники)'
       slug: lyulki-stroitelnye-fasadnye-podemniki
-    - name: Тельферы и тали
+      img: pics/g1_1041.png
+    -
+      name: 'Тельферы и тали'
       slug: telfery-elektricheskie
-    - name: Лебедки
+      img: pics/g1_541.jpg
+    -
+      name: Лебедки
       slug: lebedki
-    - name: Подъемники
+      img: pics/g1_863.jpg
+    -
+      name: Подъемники
       slug: podemniki
-    - name: Краны козловые, стреловые
+      img: pics/g1_839.jpg
+    -
+      name: 'Краны козловые, стреловые'
       slug: krany-kozlovye
-    - name: Треноги перегрузочные
+      img: pics/g1_864.jpg
+    -
+      name: 'Треноги перегрузочные'
       slug: trenogi-peregruzochnye
-    - name: Магнитные грузозахваты
+      img: pics/g1_1044.jpg
+    -
+      name: 'Магнитные грузозахваты'
       slug: magnitnye-gruzozahvaty
-    - name: Каретка для тали
+      img: pics/g1_747.jpg
+    -
+      name: 'Каретка для тали'
       slug: karetka-dlya-tali
-    - name: Роликовые платформы подкатные
+      img: pics/g1_540.jpg
+    -
+      name: 'Роликовые платформы подкатные'
       slug: rolikovye-platformy-podkatnye
-    - name: Домкраты винтовые
+      img: pics/g1_1031.jpg
+    -
+      name: 'Домкраты винтовые'
       slug: domkraty-vintovye
-    - name: Домкраты реечные
+      img: pics/g1_1028.jpeg
+    -
+      name: 'Домкраты реечные'
       slug: domkraty-reechnye
-    - name: Домкраты для автотранспорта
+      img: pics/g1_1029.jpg
+    -
+      name: 'Домкраты для автотранспорта'
       slug: domkraty-dlya-legkovyh-avto
-
-- name: Мебель для мастерской
+      img: pics/g1_933.jpg
+-
+  name: 'Мебель для мастерской'
   slug: mebel-dlya-masterskoy
+  img: pics/iuleft000023.jpg
   children:
-    - name: Тележки инструментальные
+    -
+      name: 'Тележки инструментальные'
       slug: telezhka-instrumentalnaya
-    - name: Верстаки
+      img: pics/g1_857.jpg
+    -
+      name: Верстаки
       slug: verstaki
-    - name: Шкафы инструментальные
+      img: pics/g1_858.jpg
+    -
+      name: 'Шкафы инструментальные'
       slug: shkafy-instrumentalnye
-    - name: Столы промышленные
+      img: pics/g1_859.jpg
+    -
+      name: 'Столы промышленные'
       slug: stoly-promyshlennye
-    - name: Гаражное оборудование
+      img: pics/g1_860.jpg
+    -
+      name: 'Гаражное оборудование'
       slug: mebel-dlya-avtoservisa
-    - name: Инструментальные ящики
+      img: pics/g1_738.jpg
+    -
+      name: 'Инструментальные ящики'
       slug: instrumentalnye-yaschiki
-
-- name: Мерительный инструмент
+      img: pics/g1_31.jpg
+-
+  name: 'Мерительный инструмент'
   slug: meritelnyy-instrument
+  img: pics/iuleft000022.jpg
   children:
-    - name: Тепловизоры
+    -
+      name: Тепловизоры
       slug: teplovizory
-    - name: Теодолиты
+      img: pics/g1_920.jpg
+    -
+      name: Теодолиты
       slug: teodolity
-    - name: Штативы
+      img: pics/g1_921.jpg
+    -
+      name: Штативы
       slug: shtativy
-
-- name: Товары для отдыха
+      img: pics/g1_922.jpg
+-
+  name: 'Товары для отдыха'
   slug: tovary-otdyh
+  img: pics/iuleft000004.jpg
   children:
-    - name: Мотобуксировщики
+    -
+      name: Мотобуксировщики
       slug: motobuksirovschiki
-    - name: Лодочные моторы
+      img: pics/g1_784.jpg
+    -
+      name: 'Лодочные моторы'
       slug: lodochnye-motory
-    - name: Лодки ПВХ
+      img: pics/g1_794.jpg
+    -
+      name: 'Лодки ПВХ'
       slug: lodki-pvh
-    - name: Аксессуары к товарам для отдыха
+      img: pics/g1_795.jpg
+    -
+      name: 'Аксессуары к товарам для отдыха'
       slug: aksessuary-k-tovaram-dlya-otdyha
-    - name: Мототехника
+      img: pics/g1_837.jpg
+    -
+      name: Мототехника
       slug: mototehnika
-
-- name: Оборудование с дефектом и б/у
+      img: pics/g1_868.jpg
+-
+  name: 'Оборудование с дефектом и б/у'
   slug: bu-oborudovanie
-
-- name: Производитель оборудования
+  img: pics/iuleft000021.jpg
+-
+  name: 'Производитель оборудования'
   slug: vybor-po-proizvoditelyu
+  img: pics/g1_502.jpg
   children:
-    - name: Splitstone (Россия)
+    -
+      name: 'Splitstone (Россия)'
       slug: splitstone-rossiya
-    - name: Ремеза (Беларусь)
+      img: pics/g1_880.jpg
+    -
+      name: 'Ремеза (Беларусь)'
       slug: remeza-belarus
-    - name: Champion (Россия)
+      img: pics/g1_882.jpg
+    -
+      name: 'Champion (Россия)'
       slug: champion-rossiya
-    - name: Diamaster (Россия)
+      img: pics/g1_889.jpg
+    -
+      name: 'Diamaster (Россия)'
       slug: diamaster-rossiya
-    - name: Proma (Чехия)
+      img: pics/g1_892.jpg
+    -
+      name: 'Proma (Чехия)'
       slug: proma-chehiya
-    - name: VISPROM (Россия)
+      img: pics/g1_879.jpg
+    -
+      name: 'VISPROM (Россия)'
       slug: visprom-rossiya
-    - name: CORMAK (Польша)
+      img: pics/g1_893.jpg
+    -
+      name: 'CORMAK (Польша)'
       slug: cormak-polsha
-    - name: Хайтек инструмент (Россия)
+      img: pics/g1_912.jpg
+    -
+      name: 'Хайтек инструмент (Россия)'
       slug: haytek-instrument-rossiya
-    - name: HOLZMANN (Австрия)
+      img: pics/g1_883.jpg
+    -
+      name: 'HOLZMANN (Австрия)'
       slug: holzmann-avstriya
-    - name: Euroboor (Нидерланды)
+      img: pics/g1_878.jpg
+    -
+      name: 'Euroboor (Нидерланды)'
       slug: euroboor-niderlandy
-    - name: Ориент (Россия)
+      img: pics/g1_891.jpg
+    -
+      name: 'Ориент (Россия)'
       slug: orient-rossiya
-    - name: НПО Полигон (Россия)
+      img: pics/g1_885.jpg
+    -
+      name: 'НПО Полигон (Россия)'
       slug: npo-poligon-rossiya
-    - name: Энкор-корвет (Россия)
+      img: pics/g1_895.jpg
+    -
+      name: 'Энкор-корвет (Россия)'
       slug: enkor-korvet-rossiya
-    - name: ПТК (Россия)
+      img: pics/g1_888.jpg
+    -
+      name: 'ПТК (Россия)'
       slug: ptk-rossiya
-    - name: Сварог (Россия)
+      img: pics/g1_881.jpg
+    -
+      name: 'Сварог (Россия)'
       slug: svarog-rossiya
-    - name: Tapco (США)
+      img: pics/g1_884.jpg
+    -
+      name: 'Tapco (США)'
       slug: tapco-ssha
-    - name: Stalex (Россия)
+      img: pics/g1_897.jpg
+    -
+      name: 'Stalex (Россия)'
       slug: stalex-rossiya
-    - name: PILOUS (Чехия)
+      img: pics/g1_896.jpg
+    -
+      name: 'PILOUS (Чехия)'
       slug: pilous-chehiya
+      img: pics/g1_887.jpg
