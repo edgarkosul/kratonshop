@@ -1,0 +1,1 @@
+<div>Hero Component</div>
