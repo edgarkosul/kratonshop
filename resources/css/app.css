@@ -23,6 +23,19 @@
     --color-zinc-900: #171717;
     --color-zinc-950: #0a0a0a;
 
+        /* Brand palette */
+    --color-brand-50:  #f3f6f9;
+    --color-brand-100: #e1e7ef;
+    --color-brand-200: #c3cfdf;
+    --color-brand-300: #97aec7;
+    --color-brand-400: #6a86a8;
+    --color-brand-500: #47648a;
+    --color-brand-600: #324c74;
+    --color-brand-700: #263d63;
+    --color-brand-800: #1c3965; /* основной брендовый */
+    --color-brand-900: #162c4d;
+    --color-brand-950: #0d192d;
+
     --color-accent: var(--color-neutral-800);
     --color-accent-content: var(--color-neutral-800);
     --color-accent-foreground: var(--color-white);
