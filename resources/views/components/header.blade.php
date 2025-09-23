@@ -40,9 +40,9 @@
 
 
 
-            <div class="order-4 basis-full lg:basis-auto lg:order-2 lg:flex-1 flex gap-2">
+            <div class="order-4 basis-full lg:basis-auto lg:order-2 lg:flex-1 flex gap-3">
                 <!-- Бургер -->
-                <button type="button" class="h-10 w-10 md:hidden" aria-controls="side-menu"
+                <button type="button" class="h-9 w-9 md:hidden" aria-controls="side-menu"
                     :aria-expanded="open.toString()" @click="open = true" aria-label="Открыть меню">
                     <!-- Поиск -->
                     <x-heroicon-c-bars-3 />
@@ -53,7 +53,7 @@
             <section class="order-2 lg:order-3 text-sm md:text-base basis-full sm:basis-auto">
                 <div class="flex gap-3 justify-between flex-wrap">
                     <!-- Email -->
-                    <ul class="flex flex-col font-bold text-sm justify-center" aria-label="Электронная почта">
+                    <ul class="flex flex-col font-bold text-sm" aria-label="Электронная почта">
                         <li class="flex items-center gap-2">
                             <!-- mail icon -->
                             <svg class="size-5 shrink-0 -mb-1" viewBox="0 0 24 24" fill="none" aria-hidden="true">
@@ -123,4 +123,61 @@
             @endforeach
         </nav>
     </aside>
+</div>
+<div class="px-4">
+    <div class="link-swiper relative" wire:ignore>
+        <!-- Кнопки навигации (необязательно) -->
+        <button type="button"
+            class="js-link-swiper-prev absolute left-0 top-1/2 -translate-y-1/2 z-10 flex items-center justify-center h-7 w-7 rounded-full bg-white/80 shadow hover:bg-white"
+            aria-label="Прокрутить влево">
+            <x-heroicon-o-arrow-left-circle class="text-brand-600/70"/>
+        </button>
+
+        <div class="js-link-swiper swiper select-none">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide !w-auto">
+                    <a href="#"
+                        class="inline-block whitespace-nowrap rounded-full border border-zinc-300 bg-white px-3 py-1.5 text-sm font-medium text-zinc-700 hover:bg-zinc-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500">
+                        Ссылка 1
+                    </a>
+                </div>
+                <div class="swiper-slide !w-auto">
+                    <a href="#"
+                        class="inline-block whitespace-nowrap rounded-full border border-zinc-300 bg-white px-3 py-1.5 text-sm font-medium text-zinc-700 hover:bg-zinc-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500">
+                        Длинная ссылка 2
+                    </a>
+                </div>
+                <div class="swiper-slide !w-auto">
+                    <a href="#"
+                        class="inline-block whitespace-nowrap rounded-full border border-zinc-300 bg-white px-3 py-1.5 text-sm font-medium text-zinc-700 hover:bg-zinc-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500">
+                        Тест 3
+                    </a>
+                </div>
+                <div class="swiper-slide !w-auto">
+                    <a href="#"
+                        class="inline-block whitespace-nowrap rounded-full border border-zinc-300 bg-white px-3 py-1.5 text-sm font-medium text-zinc-700 hover:bg-zinc-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500">
+                        Ссылка 4
+                    </a>
+                </div>
+                <div class="swiper-slide !w-auto">
+                    <a href="#"
+                        class="inline-block whitespace-nowrap rounded-full border border-zinc-300 bg-white px-3 py-1.5 text-sm font-medium text-zinc-700 hover:bg-zinc-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500">
+                        Очень длинная ссылка 5
+                    </a>
+                </div>
+                <div class="swiper-slide !w-auto">
+                    <a href="#"
+                        class="inline-block whitespace-nowrap rounded-full border border-zinc-300 bg-white px-3 py-1.5 text-sm font-medium text-zinc-700 hover:bg-zinc-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500">
+                        Ссылка 6
+                    </a>
+                </div>
+            </div>
+        </div>
+        <button type="button"
+            class="js-link-swiper-next absolute right-0 top-1/2 -translate-y-1/2 z-10 flex items-center justify-center h-7 w-7 rounded-full bg-white/70 shadow  hover:bg-white"
+            aria-label="Прокрутить вправо">
+            <x-heroicon-o-arrow-right-circle class="text-brand-600/70"/>
+        </button>
+
+    </div>
 </div>
