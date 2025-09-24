@@ -3,30 +3,28 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
-use Kalnoy\Nestedset\NestedSet;
 
-return new class extends Migration
-{
+return new class extends Migration {
     public function up(): void
     {
         Schema::create('categories', function (Blueprint $table) {
             $table->id();
 
-            // Добавляет parent_id, _lft, _rgt (индексы тоже поставит)
-            NestedSet::columns($table);
-
             $table->string('name');
-            $table->string('slug');               // слаг в рамках одного родителя
-            $table->string('img')->nullable();    // путь к картинке
+            $table->string('slug');
+            $table->string('img')->nullable();
             $table->boolean('is_active')->default(true);
-            $table->unsignedInteger('sort')->default(0); // на случай ручной сортировки среди братьев
-            $table->json('meta_json')->nullable();
 
+            // adjacency list
+            $table->integer('parent_id')->default(-1)->index(); // root = -1
+            $table->integer('order')->default(0)->index();      // порядок среди братьев
+
+            $table->json('meta_json')->nullable();
             $table->timestamps();
 
-            // уникальность в рамках родителя (parent_id NULL разрешает одинаковые slug в разных корнях)
-            $table->unique(['parent_id', 'slug']);
-            $table->index(['is_active', 'sort']);
+            // уникальность внутри уровня
+            $table->unique(['parent_id', 'slug'],  'categories_parent_slug_unique');
+            $table->unique(['parent_id', 'order'], 'categories_parent_order_unique'); // гарантируем уникальные позиции
         });
     }
 

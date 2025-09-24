@@ -77,29 +77,17 @@ class HomePageViewModel
     {
         return Cache::remember('home:rootCategories:v1', 3600, function () {
             return Category::query()
-                ->whereIsRoot()          // только корневые
+                ->where('parent_id', -1)   // только корневые
                 ->where('is_active', true)
-                ->defaultOrder()         // порядок по Nested Set (lft)
-                ->orderBy('sort')        // дополнительная сортировка, если нужна
+                ->orderBy('order')         // порядок братьев
                 ->get([
                     'id',
                     'name',
                     'slug',
                     'img',
-                    'sort',
+                    'order',
                     'is_active',
                 ]);
-                // Можно сразу добавить URL, используя ваш аксессор slug_path
-                // ->map(function (Category $c) {
-                //     return [
-                //         'id'    => $c->id,
-                //         'name'  => $c->name,
-                //         'slug'  => $c->slug,
-                //         'img'   => $c->img,
-                //         'sort'  => $c->sort,
-                //         'url'   => route('category.show', ['path' => $c->slug_path]), // см. маршрут ниже
-                //     ];
-                // });
         });
     }
 }

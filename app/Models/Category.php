@@ -3,11 +3,11 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Kalnoy\Nestedset\NodeTrait;
+use SolutionForest\FilamentTree\Concern\ModelTree;
 
 class Category extends Model
 {
-    use NodeTrait;
+    use ModelTree;
 
     protected $fillable = [
         'parent_id',
@@ -15,7 +15,7 @@ class Category extends Model
         'slug',
         'img',
         'is_active',
-        'sort',
+        'order',
         'meta_json',
     ];
 
@@ -24,18 +24,36 @@ class Category extends Model
         'meta_json' => 'array',
     ];
 
-    // Удобный аксессор: полный путь из слагов
-    public function getSlugPathAttribute(): string
+    public static function defaultParentKey(): int
     {
-        return $this->ancestorsAndSelf()
-            ->defaultOrder()
-            ->pluck('slug')
-            ->implode('/');
+        return -1;
+    } // root
+
+    public function parent()
+    {
+        return $this->belongsTo(self::class, 'parent_id');
+    }
+    public function children()
+    {
+        return $this->hasMany(self::class, 'parent_id')->orderBy('order');
     }
 
-    // Корневые узлы (ordered по NestedSet)
     public function scopeRoots($q)
     {
-        return $q->whereIsRoot();
+        return $q->where('parent_id', -1)->orderBy('order');
+    }
+
+    public function getSlugPathAttribute(): string
+    {
+        $segments = [];
+        $node = $this;
+        while ($node && $node->parent_id !== -1) {
+            $segments[] = $node->slug;
+            $node = $node->parent;
+        }
+        if ($node && $node->parent_id === -1) {
+            $segments[] = $node->slug;
+        }
+        return implode('/', array_reverse($segments));
     }
 }

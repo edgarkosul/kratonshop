@@ -1,0 +1,28 @@
+@import "../../../../vendor/filament/filament/resources/css/theme.css";
+
+@source '../../../../app/Filament/**/*';
+@source '../../../../resources/views/filament/**/*';
+
+/* страница панели */
+.fi-page .filament-tree .tree-item-display {
+    width: auto !important; /* убрать фикс 200px */
+    max-width: none !important;
+    flex: 1 1 auto !important; /* занять доступное пространство */
+    min-width: 0 !important; /* разрешить сжатие текста внутри */
+}
+
+/* сам текст — переносы, без многоточий */
+.fi-page .filament-tree .item-title {
+    white-space: normal !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
+    word-break: break-word !important;
+    display: block !important;
+}
+
+/* правые кнопки — по контенту, не тянуть */
+.fi-page .filament-tree .dd-item-btns,
+.fi-page .filament-tree .fi-tree-actions-ctn {
+    flex: 0 0 auto !important;
+    margin-left: auto !important;
+}
