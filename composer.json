@@ -14,6 +14,7 @@
         "davidhsianturi/blade-bootstrap-icons": "^2.1",
         "filament/filament": "^4.0",
         "kalnoy/nestedset": "^6.0",
+        "kerigard/laravel-lang-ru": "^2.0",
         "laravel/framework": "^12.0",
         "laravel/tinker": "^2.10.1",
         "livewire/flux": "^2.1.1",

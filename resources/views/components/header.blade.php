@@ -97,11 +97,11 @@
                 @endforeach
             </nav>
         </aside>
-        <div class="mx-auto max-w-7xl items-center px-4 flex">
-            <button class="py-2 flex-none flex items-center gap-1 mr-4">
-                <x-heroicon-c-bars-3 class="inline-block size-6 text-zinc-500" /><span>Каталог</span>
+        <div class="mx-auto max-w-7xl items-center px-4 flex justify-between">
+            <button class="py-2 flex-none flex items-center gap-1 mr-4  font-bold mb-1 text-brand-800">
+                <x-heroicon-c-bars-3 class="inline-block size-6 " /><span>Каталог</span>
             </button>
-            <div class="flex-1 min-w-0">
+            <div class="flex-1 min-w-0 hidden sm:block">
                 <div class="link-swiper relative" wire:ignore>
                     <button type="button"
                         class="js-link-swiper-prev absolute left-0 top-1/2 -translate-y-1/2 z-10 flex items-center justify-center h-5 w-5 rounded-full bg-white/80 shadow hover:bg-white"
