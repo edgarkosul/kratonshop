@@ -1,9 +1,10 @@
 @props([
     'href',
     'active' => false,
+    'extraClass' => ''
 ])
 
-<li {{ $attributes->class([]) }}>
+<li {{ $attributes->class([$extraClass]) }}>
     <a href="{{ $href }}"
        class="
             inline-block px-3 py-2 transition-colors

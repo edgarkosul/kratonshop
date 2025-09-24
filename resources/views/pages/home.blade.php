@@ -1,4 +1,4 @@
-<x-layout :title="$title" :topMenu="$topMenu" :sideMenu="$sideMenu">
+<x-layout :title="$title" :topMenu="$topMenu" :sideMenu="$sideMenu" :rootCategories="$rootCategories">
   <x-hero
     :title="$hero['title']"
     :subtitle="$hero['subtitle']"

@@ -3,6 +3,7 @@
   // прокидываем в header
   'topMenu' => [],
   'sideMenu' => [],
+  'rootCategories' => [],
 ])
 
 <!DOCTYPE html>
@@ -14,17 +15,17 @@
   @vite(['resources/css/app.css','resources/js/app.js'])
   {{ $head ?? '' }}
   @stack('head')
-  @livewireStyles
+  @fluxAppearance
 </head>
 <body class="min-h-full bg-white text-gray-900 antialiased">
   <div class="flex min-h-screen flex-col">
-    <x-header :topMenu="$topMenu" :sideMenu="$sideMenu"/>
+    <x-header :topMenu="$topMenu" :sideMenu="$sideMenu" :rootCategories="$rootCategories"/>
     <main id="content" class="flex-1">
       {{ $slot }}
     </main>
     <x-footer/>
   </div>
-  @livewireScripts
+  @fluxScripts
   @stack('scripts')
 </body>
 </html>

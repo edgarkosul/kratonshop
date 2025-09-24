@@ -1,12 +1,12 @@
-@import 'tailwindcss';
-@import '../../vendor/livewire/flux/dist/flux.css';
+@import "tailwindcss";
+@import "../../vendor/livewire/flux/dist/flux.css";
 
-@import 'swiper/css';
-@import 'swiper/css/free-mode';
-@import 'swiper/css/navigation';
-@import 'swiper/css/scrollbar';
-@import 'swiper/css/mousewheel';
-@import 'swiper/css/a11y';
+@import "swiper/css";
+@import "swiper/css/free-mode";
+@import "swiper/css/navigation";
+@import "swiper/css/scrollbar";
+@import "swiper/css/mousewheel";
+@import "swiper/css/a11y";
 
 @source '../views';
 @source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
@@ -16,7 +16,9 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    --font-sans: "Instrument Sans", ui-sans-serif, system-ui, sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+        "Noto Color Emoji";
 
     --color-zinc-50: #fafafa;
     --color-zinc-100: #f5f5f5;
@@ -30,8 +32,8 @@
     --color-zinc-900: #171717;
     --color-zinc-950: #0a0a0a;
 
-        /* Brand palette */
-    --color-brand-50:  #f3f6f9;
+    /* Brand palette */
+    --color-brand-50: #f3f6f9;
     --color-brand-100: #e1e7ef;
     --color-brand-200: #c3cfdf;
     --color-brand-300: #97aec7;
@@ -57,13 +59,15 @@
 }
 
 @layer base {
-
     *,
     ::after,
     ::before,
     ::backdrop,
     ::file-selector-button {
         border-color: var(--color-gray-200, currentColor);
+    }
+    .link-swiper .swiper-button-disabled {
+        @apply opacity-0 pointer-events-none transition-opacity duration-200;
     }
 }
 
@@ -72,7 +76,7 @@
 }
 
 [data-flux-label] {
-    @apply  !mb-0 !leading-tight;
+    @apply !mb-0 !leading-tight;
 }
 
 input:focus[data-flux-control],
