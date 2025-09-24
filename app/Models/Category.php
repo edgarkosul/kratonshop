@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\Storage;
 use SolutionForest\FilamentTree\Concern\ModelTree;
 
 class Category extends Model
@@ -55,5 +56,23 @@ class Category extends Model
             $segments[] = $node->slug;
         }
         return implode('/', array_reverse($segments));
+    }
+
+    public function getImageUrlAttribute(): ?string
+    {
+        $path = $this->img;
+        if (! $path) return null;
+
+        if (Storage::disk('public')->exists($path)) {
+            /** @var FilesystemAdapter $disk */
+            $disk = Storage::disk('public');
+            return $disk->url($path);
+        }
+
+        if (str_starts_with($path, 'pics/')) {
+            return url('/' . $path); // если каталог pics/ лежит в public/
+        }
+
+        return $path; // абсолютный URL
     }
 }

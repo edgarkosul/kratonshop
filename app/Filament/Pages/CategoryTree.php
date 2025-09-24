@@ -4,15 +4,23 @@ namespace App\Filament\Pages;
 
 use App\Models\Category;
 use Illuminate\Support\Str;
+use Intervention\Image\Image;
+use Intervention\Image\ImageManager;
 use Filament\Forms\Components\Hidden;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\Toggle;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\Storage;
 use Filament\Forms\Components\TextInput;
+use Filament\Forms\Components\FileUpload;
+use Illuminate\Filesystem\FilesystemAdapter;
+use Intervention\Image\Drivers\Imagick\Driver;
 use SolutionForest\FilamentTree\Actions\Action;
 use SolutionForest\FilamentTree\Pages\TreePage;
 use SolutionForest\FilamentTree\Actions\EditAction;
 use SolutionForest\FilamentTree\Actions\CreateAction;
+use SolutionForest\FilamentTree\Actions\DeleteAction;
+use Livewire\Features\SupportFileUploads\TemporaryUploadedFile;
 
 class CategoryTree extends TreePage
 {
@@ -71,7 +79,7 @@ class CategoryTree extends TreePage
 
     protected function hasDeleteAction(): bool
     {
-        return false;
+        return true;
     }
 
     protected function hasEditAction(): bool
@@ -118,15 +126,11 @@ class CategoryTree extends TreePage
     protected function getTreeActions(): array
     {
         return [
-            // Редактировать
-            $this->configureEditAction(
-                EditAction::make()->schema($this->getEditFormSchema())
-            ),
-
             // Создать ПОД выбранной категорией
             CreateAction::make('createCategory')
-                ->label('Создать')
+                ->label('')
                 ->icon('heroicon-o-folder-plus')
+                ->iconButton()
                 ->schema([
                     Hidden::make('parent_id'),
                     ...$this->baseCategoryFields(),
@@ -135,10 +139,28 @@ class CategoryTree extends TreePage
                     $data['parent_id'] = $record->id; // фиксируем родителя
                     return $data;
                 }),
+            // Редактировать
+            $this->configureEditAction(
+                EditAction::make()->schema($this->getEditFormSchema())
+            ),
+
+
+            DeleteAction::make()
+                ->label('Удалить')
+                ->icon('heroicon-o-trash')
+                // ->visible(fn(Category $record) => $record->parent_id !== -1)
+                ->requiresConfirmation()
+                ->modalHeading('Удаление категории')
+                ->modalDescription(function (Category $record) {
+                    $children = Category::where('parent_id', $record->id)->count();
+                    return $children > 0
+                        ? "Будет удалена «{$record->name}» и все её дочерние категории ({$children}). Продолжить?"
+                        : "Удалить «{$record->name}»?";
+                })
+                ->modalSubmitActionLabel('Да, удалить'),
         ];
     }
 
-    // Общая часть полей (без parent_id)
     protected function baseCategoryFields(): array
     {
         return [
@@ -146,16 +168,41 @@ class CategoryTree extends TreePage
                 ->label('Название')
                 ->required()
                 ->live(onBlur: true)
-                ->afterStateUpdated(fn($state, callable $set) => $set('slug', Str::slug($state ?? '', '-'))),
+                ->afterStateUpdated(fn($state, $set) => $set('slug', Str::slug($state ?? '', '-'))),
 
-            TextInput::make('slug')
-                ->label('Slug')
-                ->required()
-                ->unique(ignoreRecord: true), // уникален в таблице
+            TextInput::make('slug')->label('Slug')->required(),
 
-            TextInput::make('img')->label('Img'),
+            FileUpload::make('img')
+                ->label('Изображение')
+                ->image()                    // превью в Filament
+                ->openable()
+                ->downloadable()
+                ->disk('public')             // будет искать и показывать через Storage::url()
+                ->directory('categories')
+                ->preserveFilenames()
+                ->getUploadedFileNameForStorageUsing(
+                    fn(TemporaryUploadedFile $file, $record): string =>
+                    Str::slug(($record?->slug ?: pathinfo($file->getClientOriginalName(), PATHINFO_FILENAME)), '-')
+                        . '.webp'
+                )
+                ->saveUploadedFileUsing(function (TemporaryUploadedFile $file) {
+                    $manager = new ImageManager(new Driver());
 
-            Toggle::make('is_active')->label('Активна')->default(true),
+                    $baseDir  = 'categories';
+                    $basename = pathinfo($file->getClientOriginalName(), PATHINFO_FILENAME);
+                    $fileName = Str::slug($basename, '-') . '.webp';
+                    $path     = $baseDir . '/' . $fileName;
+
+                    // читаем любой поддерживаемый формат, уменьшаем, конвертируем в webp
+                    $img = $manager->read($file->getRealPath())->scaleDown(1600);
+                    $binary = $img->toWebp(82);
+
+                    Storage::disk('public')->put($path, (string) $binary);
+
+                    return $path; // относительный путь, сохранится в БД
+                })
+                ->acceptedFileTypes(['image/*'])
+                ->maxSize(8 * 1024)
         ];
     }
 

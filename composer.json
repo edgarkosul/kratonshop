@@ -13,6 +13,7 @@
         "codeat3/blade-iconpark": "^1.7",
         "davidhsianturi/blade-bootstrap-icons": "^2.1",
         "filament/filament": "^4.0",
+        "intervention/image": "^3",
         "kalnoy/nestedset": "^6.0",
         "kerigard/laravel-lang-ru": "^2.0",
         "laravel/framework": "^12.0",

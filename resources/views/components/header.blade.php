@@ -97,10 +97,14 @@
                 @endforeach
             </nav>
         </aside>
+
+        {{-- Нижний блок  --}}
         <div class="mx-auto max-w-7xl items-center px-4 flex justify-between">
+            {{-- Кнопка католог --}}
             <button class="py-2 flex-none flex items-center gap-1 mr-4  font-bold mb-1 text-brand-800">
                 <x-heroicon-c-bars-3 class="inline-block size-6 " /><span>Каталог</span>
             </button>
+            {{-- Swiper JS --}}
             <div class="flex-1 min-w-0 hidden sm:block">
                 <div class="link-swiper relative" wire:ignore>
                     <button type="button"
@@ -128,10 +132,15 @@
                     </button>
                 </div>
             </div>
+            {{-- Блок с конзиной и авторизацией --}}
             <div class="flex items-center gap-3 justify-end pl-6 text-zinc-500">
-
+                {{-- Heart --}}
                 <x-heroicon-o-heart class="size-6 " />
+                {{-- Compare --}}
                 <x-ri-bar-chart-horizontal-fill class="size-6" />
+                {{-- Cart --}}
+                <x-heroicon-o-shopping-cart class="size-6" />
+                {{-- Auth --}}
                 @auth
                     <flux:dropdown class="" position="bottom" align="start">
                         <flux:profile :name="auth()->user()->name" :initials="auth()->user()->initials()"
@@ -173,11 +182,10 @@
                             </form>
                         </flux:menu>
                     </flux:dropdown>
-                    @else
-                    <x-heroicon-o-user  class="size-6"/>
+                @else
+                    <x-heroicon-o-user class="size-6" />
                 @endauth
 
-                <x-heroicon-o-shopping-cart class="size-6" />
             </div>
 
         </div>
