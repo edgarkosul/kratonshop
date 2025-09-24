@@ -493,64 +493,64 @@
     -
       name: 'СТАНКИ ДЛЯ ДЕРЕВООБРАБОТКИ'
       slug: stanki-dlya-derevoobrabotki
-      img: ''
+      img: pics/g1_813.jpg
       children:
         -
           name: 'Пилы торцовочно-усовочные'
           slug: pily-tortsovochno-usovochnye
-          img: ''
+          img: pics/g1_67.jpg
         -
           name: 'Станки многооперационные деревообрабатывающие'
           slug: stanki-mnogooperatsionnye-derevoobrabatyvayuschie
-          img: ''
+          img: pics/g1_43.jpg
         -
           name: 'Станки ленточнопильные и лобзиковые по дереву'
           slug: stanki-lentochnopilnye-i-lobzikovye-po-derevu
-          img: ''
+          img: pics/g1_796.jpg
         -
           name: 'Станки круглопильные'
           slug: stanki-kruglopilnye
-          img: ''
+          img: pics/g1_73.jpg
         -
           name: 'Форматно-раскроечные станки'
           slug: formatno-raskroechnye-stanki
-          img: ''
+          img: pics/g1_894.jpg
         -
           name: 'Станки фуговально-рейсмусовые'
           slug: stanki-fugovalno-reysmusovye
-          img: ''
+          img: pics/g1_44.jpg
         -
           name: 'Станки рейсмусовый'
           slug: stanki-reysmusovyy
-          img: ''
+          img: pics/g1_45.jpg
         -
           name: 'Станки фуговальные'
           slug: stanki-fugovalnye
-          img: ''
+          img: pics/g1_71.jpg
         -
           name: 'Станки фрезерные по дереву'
           slug: stanki-vertikalno-frezernye-po-derevu
-          img: ''
+          img: pics/g1_46.jpg
         -
           name: 'Столы фрезерные и комплектующие'
           slug: stoly-frezernye
-          img: ''
+          img: pics/g1_481.jpg
         -
           name: 'Станки токарные по дереву'
           slug: stanki-tokarnye-po-derevu
-          img: ''
+          img: pics/g1_70.jpg
         -
           name: 'Станки сверлильно-присадочные'
           slug: stanki-sverlilno-prisadochnye
-          img: ''
+          img: pics/g1_970.jpg
         -
           name: 'Станки для обработки кромки'
           slug: stanki-dlya-obrabotki-kromki
-          img: ''
+          img: pics/g1_971.jpg
         -
           name: 'Автоподатчик заготовок'
           slug: avtopodatchik-zagotovok
-          img: ''
+          img: pics/g1_830.jpg
     -
       name: 'СТАНКИ ДЛЯ МЕТАЛЛООБРАБОТКИ'
       slug: stanki-dlya-metaloobrabotki
@@ -781,7 +781,7 @@
     -
       name: 'Сборщик стружки'
       slug: sborschik-struzhki
-      img: ''
+      img: pics/g1_831.jpg
     -
       name: 'Окрасочные аппараты'
       slug: okrasochnye-apparaty
