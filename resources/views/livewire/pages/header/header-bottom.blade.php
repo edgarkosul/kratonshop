@@ -1,12 +1,7 @@
-<div x-data="{
-    open: $wire.entangle('open'),
-    active: $wire.entangle('activeId'),
-    showRoots: $wire.entangle('showRoots'),
-    }"
-    class="relative">
+<div class="relative">
     <div class="mx-auto max-w-7xl items-center pr-4 pl-1 flex justify-between">
         {{-- Кнопка каталог --}}
-        <button type="button" @click="$wire.toggleCatalog()" :aria-expanded="open.toString()"
+        <button type="button" wire:click="toggleCatalog" :aria-expanded="open.toString()"
             class="py-2 px-3 flex-none flex items-center gap-1 mr-2 font-bold mb-1 text-brand-800 hover:bg-gray-200">
             <span class="uppercase cursor-pointer">Каталог</span>
         </button>
@@ -25,7 +20,7 @@
                         @foreach ($rootCategories as $category)
                             @php $cid = (int) $category['id']; @endphp
                             <div class="swiper-slide !w-auto bg-white hover:bg-zinc-100">
-                                <button type="button" @click="$wire.select({{ $cid }})"
+                                <button type="button" wire:click="select({{ $cid }})"
                                     class="inline-flex items-center gap-1 whitespace-nowrap pl-3 py-1.5 text-xs text-zinc-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 uppercase font-semibold"
                                     :aria-pressed="(active === {{ $cid }}) ? 'true' : 'false'"
                                     :aria-expanded="(open && active === {{ $cid }}) ? 'true' : 'false'">
@@ -33,13 +28,13 @@
 
                                     {{-- Иконки: вниз по умолчанию, вверх когда эта же категория активна и панель открыта --}}
                                     <span class="inline-block relative w-5 h-5">
-                                        <span x-show="!(open && active === {{ $cid }})"
+                                        <span wire:show="!open"
                                             x-transition.opacity.duration.150ms
                                             class="absolute inset-0 flex items-center justify-center"
                                             aria-hidden="true">
                                             <x-iconpark-down class="size-5" />
                                         </span>
-                                        <span x-show="open && active === {{ $cid }}"
+                                        <span wire:show="open"
                                             x-transition.opacity.duration.150ms
                                             class="absolute inset-0 flex items-center justify-center"
                                             aria-hidden="true">
@@ -110,49 +105,43 @@
     </div>
 
     {{-- Панель контента --}}
-    <div x-show="open" wire:transition.opacity.scale.origin.top x-cloak
+    <div wire:show="open" wire:transition.opacity.scale.origin.top wire:cloak
         class="max-w-7xl mx-auto bg-white shadow absolute left-0 right-0 border border-zinc-200 overflow-hidden"
         role="region" aria-label="Каталог">
-            @if ($showRoots)
-                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-6">
-                    @foreach ($rootCategories as $cat)
-                        <button type="button"
-                            class="group flex items-center gap-3 p-2 rounded hover:bg-zinc-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500"
-                            @click="$wire.select({{ (int) $cat['id'] }})">
-                            @if (!empty($cat['img']))
-                                <img src="{{ asset($cat['img']) }}" alt="{{ $cat['name'] }}"
-                                    class="h-10 w-10 object-cover rounded" />
-                            @endif
-                            <span
-                                class="text-sm font-medium text-zinc-800 group-hover:text-brand-700">{{ $cat['name'] }}</span>
-                        </button>
-                    @endforeach
-                </div>
-            @else
-                {{-- Режим детей выбранной категории --}}
-                @if ($activeId && count($panel))
-                    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-6">
-                        @foreach ($panel as $item)
-                            <a href="{{ url($item['slug']) }}"
-                                class="group flex items-center gap-3 p-2 rounded hover:bg-zinc-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500">
-                                @if (!empty($item['img']))
-                                    <img src="{{ asset($item['img']) }}" alt="{{ $item['name'] }}"
-                                        class="h-10 w-10 object-cover rounded" />
-                                @endif
-                                <span
-                                    class="text-sm font-medium text-zinc-800 group-hover:text-brand-700">{{ $item['name'] }}</span>
-                            </a>
-                        @endforeach
-                    </div>
-                @endif
-            @endif
 
+        <div wire:show="showRoots" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-6">
+            @foreach ($rootCategories as $cat)
+                <button type="button"
+                    class="group flex items-center gap-3 p-2 rounded hover:bg-zinc-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500"
+                    wire:click="select({{ (int) $cat['id'] }})">
+                    @if (!empty($cat['img']))
+                        <img src="{{ asset($cat['img']) }}" alt="{{ $cat['name'] }}"
+                            class="h-10 w-10 object-cover rounded" />
+                    @endif
+                    <span
+                        class="text-sm font-medium text-zinc-800 group-hover:text-brand-700">{{ $cat['name'] }}</span>
+                </button>
+            @endforeach
+        </div>
+        {{-- Режим детей выбранной категории --}}
 
+        <div wire:show="activeId" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-6">
+            @foreach ($panel as $item)
+                <a href="{{ url($item['slug']) }}"
+                    class="group flex items-center gap-3 p-2 rounded hover:bg-zinc-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500">
+                    @if (!empty($item['img']))
+                        <img src="{{ asset($item['img']) }}" alt="{{ $item['name'] }}"
+                            class="h-10 w-10 object-cover rounded" />
+                    @endif
+                    <span
+                        class="text-sm font-medium text-zinc-800 group-hover:text-brand-700">{{ $item['name'] }}</span>
+                </a>
+            @endforeach
+
+        </div>
         <div class="px-6 pb-4 flex gap-4">
-            <button type="button" @click="$wire.toggleCatalog()" class="text-xs text-zinc-500 hover:text-zinc-700">
+            <button type="button" wire:click="toggleCatalog" class="text-xs text-zinc-500 hover:text-zinc-700">
                 Закрыть
             </button>
         </div>
     </div>
-</div>
-
