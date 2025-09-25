@@ -40,7 +40,9 @@ class HeaderBottom extends Component
     {
         // Если кликнули по той же категории, и панель открыта — закрываем
         if ($this->activeId === $id && $this->open && !$this->showRoots) {
-            $this->open = ! $this->open;
+            $this->open = false;
+            $this->activeId = null;
+            $this->panel = [];
             return;
         }
 
