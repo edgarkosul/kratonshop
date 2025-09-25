@@ -123,4 +123,8 @@ return [
         'store' => env('APP_MAINTENANCE_STORE', 'database'),
     ],
 
+    'testing_gate_token' => env('TESTING_GATE_TOKEN'),
+    'testing_gate_cookie' => env('TESTING_GATE_COOKIE', 'test_access_token'),
+    'testing_gate_param' => env('TESTING_GATE_PARAM', 'tt'),
+
 ];
