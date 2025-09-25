@@ -178,7 +178,7 @@ class CategoryTree extends TreePage
                 ->openable()
                 ->downloadable()
                 ->disk('public')             // будет искать и показывать через Storage::url()
-                ->directory('categories')
+                ->directory('pics/categories')
                 ->preserveFilenames()
                 ->getUploadedFileNameForStorageUsing(
                     fn(TemporaryUploadedFile $file, $record): string =>
@@ -186,20 +186,21 @@ class CategoryTree extends TreePage
                         . '.webp'
                 )
                 ->saveUploadedFileUsing(function (TemporaryUploadedFile $file) {
-                    $manager = new ImageManager(new Driver());
+                    $manager = new ImageManager(new Driver()); // GD по умолчанию
 
-                    $baseDir  = 'categories';
-                    $basename = pathinfo($file->getClientOriginalName(), PATHINFO_FILENAME);
-                    $fileName = Str::slug($basename, '-') . '.webp';
-                    $path     = $baseDir . '/' . $fileName;
+                    // Простое и стабильное имя файла без originalName:
+                    // cat-<ulid>.webp (минимум коллизий, одинаково на create/edit)
+                    $filename = 'cat-' . Str::lower(Str::ulid()) . '.webp';
+                    $path     = 'pics/categories/' . $filename;
 
                     // читаем любой поддерживаемый формат, уменьшаем, конвертируем в webp
-                    $img = $manager->read($file->getRealPath())->scaleDown(1600);
+                    $img    = $manager->read($file->getRealPath())->scaleDown(1600);
                     $binary = $img->toWebp(82);
 
                     Storage::disk('public')->put($path, (string) $binary);
 
-                    return $path; // относительный путь, сохранится в БД
+                    // в БД попадёт относительный путь 'pics/categories/cat-<ulid>.webp'
+                    return $path;
                 })
                 ->acceptedFileTypes(['image/*'])
                 ->maxSize(8 * 1024)

@@ -25,6 +25,9 @@ class Category extends Model
         'meta_json' => 'array',
     ];
 
+    protected $appends = ['image_url'];
+
+
     public static function defaultParentKey(): int
     {
         return -1;
@@ -63,16 +66,34 @@ class Category extends Model
         $path = $this->img;
         if (! $path) return null;
 
-        if (Storage::disk('public')->exists($path)) {
-            /** @var FilesystemAdapter $disk */
-            $disk = Storage::disk('public');
-            return $disk->url($path);
+        // абсолютные URL оставляем
+        if (str_starts_with($path, 'http://') || str_starts_with($path, 'https://')) {
+            return $path;
         }
 
-        if (str_starts_with($path, 'pics/')) {
-            return url('/' . $path); // если каталог pics/ лежит в public/
-        }
+        /** @var FilesystemAdapter $disk */
+        $disk = Storage::disk('public');
 
-        return $path; // абсолютный URL
+        return $disk->url($path);
+    }
+
+    protected static function booted(): void
+    {
+        // удаляем старый файл при замене
+        static::updating(function (Category $m) {
+            if ($m->isDirty('img')) {
+                $old = $m->getOriginal('img');
+                if ($old && !str_starts_with($old, 'http')) {
+                    Storage::disk('public')->delete($old);
+                }
+            }
+        });
+
+        // удаляем файл при удалении записи
+        static::deleting(function (Category $m) {
+            if ($m->img && !str_starts_with($m->img, 'http')) {
+                Storage::disk('public')->delete($m->img);
+            }
+        });
     }
 }
