@@ -29,10 +29,10 @@
                 <x-search class="flex-1" />
             </div>
             <!-- Контакты -->
-            <section class="order-2 lg:order-3 text-sm md:text-base basis-full sm:basis-auto">
+            <section class="order-2 lg:order-3 text-sm max-[420px]:text-[12px] md:text-base basis-full sm:basis-auto">
                 <div class="flex gap-3 justify-between flex-wrap">
                     <!-- Email -->
-                    <ul class="flex flex-col font-bold text-sm" aria-label="Электронная почта">
+                    <ul class="flex flex-col font-bold" aria-label="Электронная почта">
                         <li class="flex items-center gap-2">
                             <!-- mail icon -->
                             <svg class="size-5 shrink-0 -mb-1" viewBox="0 0 24 24" fill="none" aria-hidden="true">
@@ -49,7 +49,7 @@
                     </ul>
                     <div class="flex gap-3">
                         <!-- Телефоны -->
-                        <ul class="flex flex-col text-sm" aria-label="Телефоны">
+                        <ul class="flex flex-col" aria-label="Телефоны">
                             <li class="-mb-0.5">
                                 <a href="tel:+78126421004" class="font-bold whitespace-nowrap">8 (812) 642-10-04</a>
                             </li>
@@ -64,10 +64,10 @@
                         <ul class="flex flex-col gap-1">
                             <li>
                                 <a href="https://wa.me/79643421004"><x-fab-whatsapp-square
-                                        class="h-7 w-auto text-[#25D366]" /></a>
+                                        class="h-7 max-[420px]:h-5 w-auto text-[#25D366]" /></a>
                             </li>
                             <li>
-                                <x-icon-max-logo class="h-6 w-auto" />
+                                <x-icon-max-logo class="h-6 max-[420px]:h-5 w-auto" />
                             </li>
                         </ul>
                     </div>
@@ -99,10 +99,11 @@
         </aside>
 
         {{-- Нижний блок  --}}
-        <div class="mx-auto max-w-7xl items-center px-4 flex justify-between">
+        <div class="mx-auto max-w-7xl items-center pr-4 pl-1 flex justify-between">
             {{-- Кнопка католог --}}
-            <button class="py-2 flex-none flex items-center gap-1 mr-4  font-bold mb-1 text-brand-800">
-                <x-heroicon-c-bars-3 class="inline-block size-6 " /><span>Каталог</span>
+            <button class="py-2 px-3 flex-none flex items-center gap-1 mr-2  font-bold mb-1 text-brand-800 hover:bg-gray-200">
+                {{-- <x-heroicon-c-bars-3 class="inline-block size-6 " /> --}}
+                <span class="uppercase cursor-pointer">Каталог</span>
             </button>
             {{-- Swiper JS --}}
             <div class="flex-1 min-w-0 hidden sm:block">
