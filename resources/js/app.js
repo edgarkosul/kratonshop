@@ -3,6 +3,7 @@ import { A11y, FreeMode, Mousewheel, Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/free-mode';
 import 'swiper/css/mousewheel';
+import collapse from '@alpinejs/collapse'
 
 document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.link-swiper').forEach((wrap) => {

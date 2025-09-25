@@ -99,96 +99,95 @@
         </aside>
 
         {{-- Нижний блок  --}}
-        <div class="mx-auto max-w-7xl items-center pr-4 pl-1 flex justify-between">
-            {{-- Кнопка католог --}}
-            <button class="py-2 px-3 flex-none flex items-center gap-1 mr-2  font-bold mb-1 text-brand-800 hover:bg-gray-200">
-                {{-- <x-heroicon-c-bars-3 class="inline-block size-6 " /> --}}
-                <span class="uppercase cursor-pointer">Каталог</span>
-            </button>
-            {{-- Swiper JS --}}
-            <div class="flex-1 min-w-0 hidden sm:block">
-                <div class="link-swiper relative" wire:ignore>
-                    <button type="button"
-                        class="js-link-swiper-prev absolute left-0 top-1/2 -translate-y-1/2 z-10 flex items-center justify-center h-5 w-5 rounded-full bg-white/80 shadow hover:bg-white"
-                        aria-label="Прокрутить влево">
-                        <x-heroicon-o-arrow-small-left class="text-brand-600/70" />
-                    </button>
-                    <div class="js-link-swiper swiper w-full min-w-0 overflow-hidden select-none">
-                        <div class="swiper-wrapper">
-                            @foreach ($rootCategories as $category)
-                                <div class="swiper-slide !w-auto bg-white hover:bg-zinc-100">
-                                    <a href="#"
-                                        class="inline-block whitespace-nowrap  pl-3 py-1.5 text-xs text-zinc-700  focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 uppercase font-semibold">
-                                        {{ $category['name'] }}
-                                    </a>
-                                    <x-iconpark-down class="size-6 inline-block" />
-                                </div>
-                            @endforeach
+        <div x-data="{ open: false }"  class="relative">
+            <div class="mx-auto max-w-7xl items-center pr-4 pl-1 flex justify-between">
+                {{-- Кнопка катaлог --}}
+                <button
+                    class="py-2 px-3 flex-none flex items-center gap-1 mr-2  font-bold mb-1 text-brand-800 hover:bg-gray-200">
+                    {{-- <x-heroicon-c-bars-3 class="inline-block size-6 " /> --}}
+                    <span class="uppercase cursor-pointer">Каталог</span>
+                </button>
+                {{-- Swiper JS --}}
+                <div class="flex-1 min-w-0 hidden sm:block">
+                    <div class="link-swiper relative" wire:ignore>
+                        <button type="button"
+                            class="js-link-swiper-prev absolute left-0 top-1/2 -translate-y-1/2 z-10 flex items-center justify-center h-5 w-5 rounded-full bg-white/80 shadow hover:bg-white"
+                            aria-label="Прокрутить влево">
+                            <x-heroicon-o-arrow-small-left class="text-brand-600/70" />
+                        </button>
+                        <div class="js-link-swiper swiper w-full min-w-0 overflow-hidden select-none">
+                            <div class="swiper-wrapper">
+                                @foreach ($rootCategories as $category)
+                                    <div class="swiper-slide !w-auto bg-white hover:bg-zinc-100">
+                                        <button @click="open = !open"
+                                            class="inline-block whitespace-nowrap  pl-3 py-1.5 text-xs text-zinc-700  focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 uppercase font-semibold">
+                                            {{ $category['name'] }}
+                                        </button>
+                                        <x-iconpark-down class="size-6 inline-block" />
+                                    </div>
+                                @endforeach
+                            </div>
                         </div>
+                        <button type="button"
+                            class="js-link-swiper-next absolute right-0 top-1/2 -translate-y-1/2 z-10 flex items-center justify-center h-5 w-5 rounded-full bg-white/70 shadow hover:bg-white"
+                            aria-label="Прокрутить вправо">
+                            <x-heroicon-o-arrow-small-right class="text-brand-600/70" />
+                        </button>
                     </div>
-                    <button type="button"
-                        class="js-link-swiper-next absolute right-0 top-1/2 -translate-y-1/2 z-10 flex items-center justify-center h-5 w-5 rounded-full bg-white/70 shadow hover:bg-white"
-                        aria-label="Прокрутить вправо">
-                        <x-heroicon-o-arrow-small-right class="text-brand-600/70" />
-                    </button>
                 </div>
-            </div>
-            {{-- Блок с конзиной и авторизацией --}}
-            <div class="flex items-center gap-3 justify-end pl-6 text-zinc-500">
-                {{-- Heart --}}
-                <x-heroicon-o-heart class="size-6 " />
-                {{-- Compare --}}
-                <x-ri-bar-chart-horizontal-fill class="size-6" />
-                {{-- Cart --}}
-                <x-heroicon-o-shopping-cart class="size-6" />
-                {{-- Auth --}}
-                @auth
-                    <flux:dropdown class="" position="bottom" align="start">
-                        <flux:profile :name="auth()->user()->name" :initials="auth()->user()->initials()"
-                            icon:trailing="chevrons-up-down" />
-                        <flux:menu class="w-[220px]">
-                            <flux:menu.radio.group>
-                                <div class="p-0 text-sm font-normal">
-                                    <div class="flex items-center gap-2 px-1 py-1.5 text-start text-sm">
-                                        <span class="relative flex h-8 w-8 shrink-0 overflow-hidden rounded-lg">
-                                            <span
-                                                class="flex h-full w-full items-center justify-center rounded-lg bg-neutral-200 text-black dark:bg-neutral-700 dark:text-white">
-                                                {{ auth()->user()->initials() }}
+                {{-- Блок с конзиной и авторизацией --}}
+                <div class="flex items-center gap-3 justify-end pl-6 text-zinc-500">
+                    {{-- Heart --}}
+                    <x-heroicon-o-heart class="size-6 " />
+                    {{-- Compare --}}
+                    <x-ri-bar-chart-horizontal-fill class="size-6" />
+                    {{-- Cart --}}
+                    <x-heroicon-o-shopping-cart class="size-6" />
+                    {{-- Auth --}}
+                    @auth
+                        <flux:dropdown class="" position="bottom" align="start">
+                            <flux:profile :name="auth()->user()->name" :initials="auth()->user()->initials()"
+                                icon:trailing="chevrons-up-down" />
+                            <flux:menu class="w-[220px]">
+                                <flux:menu.radio.group>
+                                    <div class="p-0 text-sm font-normal">
+                                        <div class="flex items-center gap-2 px-1 py-1.5 text-start text-sm">
+                                            <span class="relative flex h-8 w-8 shrink-0 overflow-hidden rounded-lg">
+                                                <span
+                                                    class="flex h-full w-full items-center justify-center rounded-lg bg-neutral-200 text-black dark:bg-neutral-700 dark:text-white">
+                                                    {{ auth()->user()->initials() }}
+                                                </span>
                                             </span>
-                                        </span>
-
-                                        <div class="grid flex-1 text-start text-sm leading-tight">
-                                            <span class="truncate font-semibold">{{ auth()->user()->name }}</span>
-                                            <span class="truncate text-xs">{{ auth()->user()->email }}</span>
+                                            <div class="grid flex-1 text-start text-sm leading-tight">
+                                                <span class="truncate font-semibold">{{ auth()->user()->name }}</span>
+                                                <span class="truncate text-xs">{{ auth()->user()->email }}</span>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </flux:menu.radio.group>
-
-                            <flux:menu.separator />
-
-                            <flux:menu.radio.group>
-                                <flux:menu.item :href="route('settings.profile')" icon="cog" wire:navigate>
-                                    {{ __('Settings') }}</flux:menu.item>
-                            </flux:menu.radio.group>
-
-                            <flux:menu.separator />
-
-                            <form method="POST" action="{{ route('logout') }}" class="w-full">
-                                @csrf
-                                <flux:menu.item as="button" type="submit" icon="arrow-right-start-on-rectangle"
-                                    class="w-full">
-                                    {{ __('Log Out') }}
-                                </flux:menu.item>
-                            </form>
-                        </flux:menu>
-                    </flux:dropdown>
-                @else
-                    <x-heroicon-o-user class="size-6" />
-                @endauth
-
+                                </flux:menu.radio.group>
+                                <flux:menu.separator />
+                                <flux:menu.radio.group>
+                                    <flux:menu.item :href="route('settings.profile')" icon="cog" wire:navigate>
+                                        {{ __('Settings') }}</flux:menu.item>
+                                </flux:menu.radio.group>
+                                <flux:menu.separator />
+                                <form method="POST" action="{{ route('logout') }}" class="w-full">
+                                    @csrf
+                                    <flux:menu.item as="button" type="submit" icon="arrow-right-start-on-rectangle"
+                                        class="w-full">
+                                        {{ __('Log Out') }}
+                                    </flux:menu.item>
+                                </form>
+                            </flux:menu>
+                        </flux:dropdown>
+                    @else
+                        <x-heroicon-o-user class="size-6" />
+                    @endauth
+                </div>
             </div>
-
+            <div x-show="open" x-collapse  x-cloak class="max-w-7xl mx-auto bg-zinc-500 absolute left-0 right-0 top-full">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus commodi explicabo, voluptatibus exercitationem itaque aliquam quos delectus, nesciunt distinctio tenetur dolore maiores! Delectus quia ducimus est aliquid illo error ad.
+            </div>
         </div>
 
     </header>
