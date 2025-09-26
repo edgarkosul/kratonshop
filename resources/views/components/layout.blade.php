@@ -1,31 +1,38 @@
 @props([
-  'title' => 'Kraton Shop',
-  // прокидываем в header
-  'topMenu' => [],
-  'sideMenu' => [],
-  'rootCategories' => [],
+    'title' => 'Kraton Shop',
+    // прокидываем в header
+    'topMenu' => [],
+    'sideMenu' => [],
+    'rootCategories' => [],
 ])
 
 <!DOCTYPE html>
 <html lang="ru" class="h-full">
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ $title }}</title>
-  @vite(['resources/css/app.css','resources/js/app.js'])
-  {{ $head ?? '' }}
-  @stack('head')
-  @fluxAppearance
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ $title }}</title>
+    <!-- Favicon -->
+    <link rel="icon" href="{{ asset('favicon.svg') }}" type="image/svg+xml">
+    <link rel="alternate icon" href="{{ asset('favicon.ico') }}">
+    <link rel="apple-touch-icon" href="{{ asset('apple-touch-icon.png') }}">
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    {{ $head ?? '' }}
+    @stack('head')
+    @fluxAppearance
 </head>
+
 <body class="min-h-full bg-white text-gray-900 antialiased">
-  <div class="flex min-h-screen flex-col">
-    <x-header :topMenu="$topMenu" :sideMenu="$sideMenu" :rootCategories="$rootCategories"/>
-    <main id="content" class="flex-1">
-      {{ $slot }}
-    </main>
-    <x-footer/>
-  </div>
-  @fluxScripts
-  @stack('scripts')
+    <div class="flex min-h-screen flex-col">
+        <x-header :topMenu="$topMenu" :sideMenu="$sideMenu" :rootCategories="$rootCategories" />
+        <main id="content" class="flex-1">
+            {{ $slot }}
+        </main>
+        <x-footer />
+    </div>
+    @fluxScripts
+    @stack('scripts')
 </body>
+
 </html>

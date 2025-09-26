@@ -1,8 +1,18 @@
 import Swiper from 'swiper';
-import { A11y, FreeMode, Mousewheel, Navigation } from 'swiper/modules';
+import {
+    A11y,
+    FreeMode,
+    Mousewheel,
+    Navigation,
+    EffectFade,
+    Autoplay,
+    Pagination,
+} from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/free-mode';
 import 'swiper/css/mousewheel';
+import 'swiper/css/effect-fade';
+import 'swiper/css/pagination';
 import collapse from '@alpinejs/collapse'
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -39,3 +49,32 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+document.querySelectorAll('.js-hero-swiper').forEach((el) => {
+    // Пагинация — локально внутри конкретного hero
+    const paginationEl = el.querySelector('.swiper-pagination');
+
+    const options = {
+        modules: [EffectFade, Autoplay, Pagination],
+        effect: 'fade',
+        fadeEffect: { crossFade: true },
+        speed: 700,
+        loop: true,
+        allowTouchMove: false, // без свайпов
+        autoplay: {
+            delay: 4000,
+            disableOnInteraction: false,
+        },
+    };
+
+    // Добавляем пагинацию только если элемент найден (безопасно)
+    if (paginationEl) {
+        options.pagination = {
+            el: paginationEl,
+            clickable: true,
+        };
+    }
+
+    new Swiper(el, options);
+});
+

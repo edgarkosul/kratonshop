@@ -22,20 +22,18 @@
                             <div class="swiper-slide !w-auto bg-white hover:bg-zinc-100">
                                 <button type="button" wire:click="select({{ $cid }})"
                                     class="inline-flex items-center gap-1 whitespace-nowrap pl-3 py-1.5 text-xs text-zinc-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 uppercase font-semibold"
-                                    :aria-pressed="(active === {{ $cid }}) ? 'true' : 'false'"
-                                    :aria-expanded="(open && active === {{ $cid }}) ? 'true' : 'false'">
+                                    :aria-pressed="({{ $activeId ?? 'null' }}) === {{ $cid }} ? 'true' : 'false'"
+                                    :aria-expanded="(open && ({{ $activeId ?? 'null' }}) === {{ $cid }}) ? 'true' : 'false'">
                                     <span>{{ $category['name'] }}</span>
 
                                     {{-- Иконки: вниз по умолчанию, вверх когда эта же категория активна и панель открыта --}}
                                     <span class="inline-block relative w-5 h-5">
-                                        <span wire:show="!open"
-                                            x-transition.opacity.duration.150ms
+                                        <span wire:show="!open" x-transition.opacity.duration.150ms
                                             class="absolute inset-0 flex items-center justify-center"
                                             aria-hidden="true">
                                             <x-iconpark-down class="size-5" />
                                         </span>
-                                        <span wire:show="open"
-                                            x-transition.opacity.duration.150ms
+                                        <span wire:show="open" x-transition.opacity.duration.150ms
                                             class="absolute inset-0 flex items-center justify-center"
                                             aria-hidden="true">
                                             <x-iconpark-up class="size-5" />
@@ -106,7 +104,7 @@
 
     {{-- Панель контента --}}
     <div wire:show="open" wire:transition.opacity.scale.origin.top wire:cloak
-        class="max-w-7xl mx-auto bg-white shadow absolute left-0 right-0 border border-zinc-200 overflow-hidden"
+        class="max-w-7xl mx-auto bg-white shadow absolute left-0 right-0 border border-zinc-200 overflow-hidden z-10"
         role="region" aria-label="Каталог">
 
         <div wire:show="showRoots" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-6">
@@ -119,7 +117,7 @@
                             class="h-10 w-10 object-cover rounded" />
                     @endif
                     <span
-                        class="text-sm font-medium text-zinc-800 group-hover:text-brand-700">{{ $cat['name'] }}</span>
+                        class="text-sm font-medium text-zinc-800 group-hover:text-brand-700 text-left">{{ $cat['name'] }}</span>
                 </button>
             @endforeach
         </div>
