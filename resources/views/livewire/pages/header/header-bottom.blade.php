@@ -104,7 +104,7 @@
 
     {{-- Панель контента --}}
     <div wire:show="open" wire:transition.opacity.scale.origin.top wire:cloak
-        class="max-w-7xl mx-auto bg-white shadow absolute left-0 right-0 border border-zinc-200 overflow-hidden z-10"
+        class="max-w-7xl mx-auto bg-white shadow absolute left-0 right-0 border border-zinc-200 overflow-hidden z-50"
         role="region" aria-label="Каталог">
 
         <div wire:show="showRoots" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-6">

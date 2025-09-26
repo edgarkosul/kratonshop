@@ -11,10 +11,10 @@
 
         <!-- Основной блок -->
         <div
-            class="mx-auto max-w-7xl flex lg:flex-nowrap flex-wrap justify-between items-center gap-4 px-4 my-4 md:my-6">
+            class="mx-auto max-w-7xl flex lg:flex-nowrap flex-wrap justify-between items-center gap-4 px-4 mt-4">
             <!-- Logo -->
-            <div class="order-1 min-w-52">
-                <x-icon name="logo" class="max-h-12 w-auto" />
+            <div class="order-1 flex-shrink min-w-62 max-w-72 basis-1/4">
+                <x-icon name="logo" class="w-full h-auto" />
             </div>
 
 
