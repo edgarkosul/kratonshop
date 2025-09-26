@@ -2,7 +2,7 @@
     <div class="mx-auto max-w-7xl items-center pr-4 pl-1 flex justify-between">
         {{-- Кнопка каталог --}}
         <button type="button" wire:click="toggleCatalog" :aria-expanded="open.toString()"
-            class="py-2 px-3 flex-none flex items-center gap-1 mr-2 font-bold mb-1 text-brand-800 hover:bg-gray-200">
+            class="py-2 px-3 flex-none flex items-center gap-1 mr-2 font-bold my-1 text-brand-800 hover:bg-gray-200">
             <span class="uppercase cursor-pointer">Каталог</span>
         </button>
 
